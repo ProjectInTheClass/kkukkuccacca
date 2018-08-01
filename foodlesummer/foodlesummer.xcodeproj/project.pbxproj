@@ -14,6 +14,8 @@
 		0E49EF742108576F00B90C6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E49EF722108576F00B90C6F /* LaunchScreen.storyboard */; };
 		0E49EF7F2108576F00B90C6F /* foodlesummerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49EF7E2108576F00B90C6F /* foodlesummerTests.swift */; };
 		0E49EF8A2108576F00B90C6F /* foodlesummerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49EF892108576F00B90C6F /* foodlesummerUITests.swift */; };
+		0E6280552109F51300437BD4 /* CafeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6280542109F51300437BD4 /* CafeListTableViewController.swift */; };
+		0E7C2A202111DE6300685E29 /* ExampleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7C2A1F2111DE6300685E29 /* ExampleStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		0E49EF852108576F00B90C6F /* foodlesummerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foodlesummerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E49EF892108576F00B90C6F /* foodlesummerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodlesummerUITests.swift; sourceTree = "<group>"; };
 		0E49EF8B2108576F00B90C6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E6280542109F51300437BD4 /* CafeListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeListTableViewController.swift; sourceTree = "<group>"; };
+		0E7C2A1F2111DE6300685E29 /* ExampleStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExampleStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,9 @@
 				0E49EF692108576D00B90C6F /* AppDelegate.swift */,
 				0E49EF6B2108576D00B90C6F /* ViewController.swift */,
 				0E49EF6D2108576D00B90C6F /* Main.storyboard */,
+				0E7C2A1F2111DE6300685E29 /* ExampleStoryboard.storyboard */,
 				0E49EF702108576F00B90C6F /* Assets.xcassets */,
+				0E6280542109F51300437BD4 /* CafeListTableViewController.swift */,
 				0E49EF722108576F00B90C6F /* LaunchScreen.storyboard */,
 				0E49EF752108576F00B90C6F /* Info.plist */,
 			);
@@ -232,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E7C2A202111DE6300685E29 /* ExampleStoryboard.storyboard in Resources */,
 				0E49EF742108576F00B90C6F /* LaunchScreen.storyboard in Resources */,
 				0E49EF712108576F00B90C6F /* Assets.xcassets in Resources */,
 				0E49EF6F2108576D00B90C6F /* Main.storyboard in Resources */,
@@ -259,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E6280552109F51300437BD4 /* CafeListTableViewController.swift in Sources */,
 				0E49EF6C2108576D00B90C6F /* ViewController.swift in Sources */,
 				0E49EF6A2108576D00B90C6F /* AppDelegate.swift in Sources */,
 			);
