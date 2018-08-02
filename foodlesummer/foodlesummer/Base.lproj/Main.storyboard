@@ -117,7 +117,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VPY-fe-cBn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-620" y="496"/>
+            <point key="canvasLocation" x="-655" y="-152"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="viF-Bk-03Z">
@@ -143,11 +143,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57H-xK-HUa">
-                                <rect key="frame" x="147" y="318" width="81" height="30"/>
+                                <rect key="frame" x="147" y="77" width="81" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Show Other"/>
                                 <connections>
                                     <segue destination="4NS-zs-gQl" kind="show" id="Fr4-Du-gN1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWM-yF-MtD">
+                                <rect key="frame" x="147" y="130" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="MenuDetail"/>
+                                <connections>
+                                    <segue destination="H5y-pq-yrk" kind="show" id="eUS-02-njh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -165,7 +173,15 @@
                 <viewControllerPlaceholder storyboardName="ExampleStoryboard" referencedIdentifier="hello" id="4NS-zs-gQl" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zd6-Jh-jAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1264" y="-177"/>
+            <point key="canvasLocation" x="843" y="-363"/>
+        </scene>
+        <!--MenuDetail-->
+        <scene sceneID="0BR-wt-DkF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CafeDetail" referencedIdentifier="MenuDetail" id="H5y-pq-yrk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fmc-yP-s8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="875" y="-321"/>
         </scene>
     </scenes>
 </document>
