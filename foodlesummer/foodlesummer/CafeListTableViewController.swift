@@ -2,40 +2,50 @@
 //  CafeListTableViewController.swift
 //  foodlesummer
 //
-//  Created by 김태현 on 2018. 7. 26..
+//  Created by 김태현 on 2018. 8. 3..
 //  Copyright © 2018년 김태현. All rights reserved.
 //
 
 import UIKit
 
-
-struct Cafe {
-    var name: String
-    var picture: String
-}
 class CafeListTableViewController: UITableViewController {
-    
-    var data : [Cafe] = [
-        Cafe(name : "메가커피", picture : "사진1"),
-        Cafe(name : "15그램", picture : "사진2")
-    ]
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-    override func numberOfSections(in tableView: UITableView) -> Int {   //테이블에게 섹션의 갯수를 알려준다.(optional)
-        return 1
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {   //섹션 내 셀의 갯수를 알려주며 필수 구현 항목이다.
-        return data.count
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 
-    
+    // MARK: - Table view data source
+
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 0
+    }
+
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        //셀을 테이블에 공급하는 메소드로 필수 구현 항목
+
+        // Configure the cell...
 
         return cell
     }
+    */
 
     /*
     // Override to support conditional editing of the table view.

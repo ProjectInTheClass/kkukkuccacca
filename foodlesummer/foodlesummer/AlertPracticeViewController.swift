@@ -9,6 +9,8 @@
 import UIKit
 
 class AlertPracticeViewController: UIViewController {
+    @IBOutlet weak var alertButton: UIButton!
+    
     
     @IBAction func showAlert(_ sender: Any) {
         let dialog = UIAlertController(title: "제목", message: "메세지", preferredStyle: .alert)
@@ -20,7 +22,7 @@ class AlertPracticeViewController: UIViewController {
         //확인버튼
         let okAction = UIAlertAction(title: "확인", style: .default) {(action) in
             if let textFields = dialog.textFields,
-            textFields.count > 0,
+                textFields.count > 0,
                 let password = textFields[0].text {
                 print("확인 누름 \(password)")
             }
@@ -34,9 +36,9 @@ class AlertPracticeViewController: UIViewController {
         }
         
         self.present(dialog, animated: true, completion: nil)
-        
     }
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

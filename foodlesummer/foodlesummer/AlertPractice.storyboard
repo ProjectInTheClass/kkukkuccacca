@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Alert Practice View Controller-->
         <scene sceneID="DwM-5A-yU0">
             <objects>
-                <viewController storyboardIdentifier="AlertPractice" id="e0b-aV-z6v" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AlertPractice" id="e0b-aV-z6v" customClass="AlertPracticeViewController" customModule="foodlesummer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ss3-fy-y0s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,20 +24,22 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3H-hk-InT">
-                                <rect key="frame" x="164" y="126" width="79" height="30"/>
+                                <rect key="frame" x="148" y="135" width="79" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="AlertButton"/>
                                 <connections>
-                                    <action selector="showAlert:" destination="adV-cB-WOc" eventType="touchUpInside" id="U7z-si-9S9"/>
+                                    <action selector="showAlert:" destination="e0b-aV-z6v" eventType="touchUpInside" id="2f8-6w-mfb"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GGy-Rg-YsO"/>
                     </view>
+                    <connections>
+                        <outlet property="alertButton" destination="q3H-hk-InT" id="J2F-fk-HSD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z6E-Ob-XLC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="adV-cB-WOc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="74" y="22"/>
         </scene>
