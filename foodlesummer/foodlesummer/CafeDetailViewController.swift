@@ -15,8 +15,9 @@ class CafeDetailViewController: UIViewController {
     @IBOutlet weak var cafeTitle: UILabel!
     @IBOutlet weak var cafeHour: UILabel!
     @IBOutlet weak var cafeAddress: UILabel!
+
     
-    
+
     
     //이미지 넣기
     var currentImageIndex = 0
@@ -25,7 +26,7 @@ class CafeDetailViewController: UIViewController {
         "image_cafe2",
         "image_cafe3"
     ]
-    
+
     @IBOutlet weak var arrowLeft: UIButton!
     @IBOutlet weak var arrowRight: UIButton!
     
@@ -36,7 +37,7 @@ class CafeDetailViewController: UIViewController {
         arrowLeft.isEnabled = index > 0
         arrowRight.isEnabled = index < images.count - 1
     }
-    
+
     @IBAction func showPrevImage(_ sender: Any) {
         currentImageIndex -= 1
         self.showImage(index: currentImageIndex)
@@ -47,14 +48,35 @@ class CafeDetailViewController: UIViewController {
         self.showImage(index: currentImageIndex)
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        // 초기 이미지는 첫번째 이미지이므로 왼쪽 버튼은 disabled로
+        arrowLeft.isEnabled = false
 
-        // Do any additional setup after loading the view.
     }
 
+    
+    
+    
+    
+    //좋아요 버튼
+    @IBOutlet weak var heartButton: UIButton!
+    
+    @IBAction func heatButtonAction(_ sender: Any) {
+        heartButton.isSelected = !heartButton.isSelected
+    }
+    
+    
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        cafeImage.image = #imageLiteral(resourceName: "image_cafe1")
+        cafeTitle.text = "탐앤탐스 고대점"
+        cafeHour.text = "평일 09:00 ~ 22:00 \r 주말 10:00 ~ 21:00"
+        cafeAddress.text = "서울 성북구 인촌로24길 63"
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
