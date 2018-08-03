@@ -72,7 +72,7 @@ class CafeDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         cafeImage.image = #imageLiteral(resourceName: "image_cafe1")
         cafeTitle.text = "탐앤탐스 고대점"
-        cafeHour.text = "평일 09:00 ~ 22:00 \r 주말 10:00 ~ 21:00"
+        cafeHour.text = "평일 09:00 ~ 22:00 \n 주말 10:00 ~ 21:00"
         cafeAddress.text = "서울 성북구 인촌로24길 63"
     }
     
