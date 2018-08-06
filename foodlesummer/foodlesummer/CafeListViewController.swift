@@ -46,17 +46,22 @@ class CafeListViewController: UIViewController,UITableViewDataSource {
         return cell
     }
 
-    
-    // 상세씬 전환
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "detailSegue",
-            let detailVC = segue.destination as? CafeDetailViewController,
-            let cell = sender as? UITableViewCell,
-            let index = self.tableView.indexPath(for: cell) {
-            let item = items[index.row]
-            detailVC.itemt = item
-        }
-    }
+
+
+
+//    
+//    // 상세씬 전환
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "detailSegue",
+//            let detailVC = segue.destination as? CafeDetailViewController,
+//            let cell = sender as? UITableViewCell,
+//            let index = self.tableView.indexPath(for: cell)
+//        {
+//            let item = items[index.row]
+//            detailVC.itemt = item
+//        }
+//    }
+
 
 
     
