@@ -8,29 +8,58 @@
 
 import UIKit
 
+
 class CafeListViewController: UIViewController,UITableViewDataSource {
 
-    
-    struct Cafe {
-        var cafeName: String
-        var cafeImage: String
-    }
-
-    let items = [
-        Cafe (cafeName: "탐앤탐스 고려대점", cafeImage: "Image_cafe1")
+    var items = [
+        Cafe (cafeNames: "탐앤탐스 고려대점",cafeImages: "image_cafe1",
+              cafeHour: "09:00",cafeAddress: "경기도"),
+        Cafe (cafeNames: "탐앤탐스 고려대점",cafeImages: "image_cafe1",
+              cafeHour: "09:00",cafeAddress: "경기도"),
+        Cafe (cafeNames: "탐앤탐스 고려대점",cafeImages: "image_cafe1",
+              cafeHour: "09:00",cafeAddress: "경기도"),
+        Cafe (cafeNames: "탐앤탐스 고려대점",cafeImages: "image_cafe1",
+              cafeHour: "09:00",cafeAddress: "경기도")
         ]
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
+    
+    
+    
+    //테이블뷰 데이터소스
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        return 1
+//    }
+//
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CafeListCell", for: indexPath) as! CafeListTableViewCell
+        
+        let item: Cafe = items[indexPath.row]
+        
+        cell.textLabel?.text = item.cafeNames
+        cell.imageView?.image = UIImage(named: item.cafeImages)
+        
+        
+        return cell
     }
+
     
-    
+    // 상세씬 전환
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailSegue",
+            let detailVC = segue.destination as? CafeDetailViewController,
+            let cell = sender as? UITableViewCell,
+            let index = self.tableView.indexPath(for: cell)
+        {
+            let item = items[index.row]
+            detailVC.itemt = item
+        }
+    }
+
+
     
     
     override func viewDidLoad() {

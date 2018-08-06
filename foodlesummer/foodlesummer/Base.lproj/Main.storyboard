@@ -150,20 +150,20 @@
                                     <segue destination="4NS-zs-gQl" kind="show" id="Fr4-Du-gN1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWM-yF-MtD">
-                                <rect key="frame" x="147" y="130" width="78" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="MenuDetail"/>
-                                <connections>
-                                    <segue destination="H5y-pq-yrk" kind="show" id="eUS-02-njh"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VzT-7W-13b">
                                 <rect key="frame" x="138" y="507" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="AlertPractice"/>
                                 <connections>
                                     <segue destination="n95-B9-ntb" kind="show" id="loM-Cv-hD5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRf-Op-Zct">
+                                <rect key="frame" x="155" y="127" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="CafeList"/>
+                                <connections>
+                                    <segue destination="rvf-vT-Iy1" kind="show" id="NyZ-hv-sSr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -182,15 +182,15 @@
                 <viewControllerPlaceholder storyboardName="ExampleStoryboard" referencedIdentifier="OtherScene" id="4NS-zs-gQl" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zd6-Jh-jAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1780.8" y="-363.41829085457272"/>
+            <point key="canvasLocation" x="1710" y="-367"/>
         </scene>
-        <!--MenuDetail-->
-        <scene sceneID="0BR-wt-DkF">
+        <!--CafeLists-->
+        <scene sceneID="grQ-wu-JbC">
             <objects>
-                <viewControllerPlaceholder storyboardName="CafeDetail" referencedIdentifier="MenuDetail" id="H5y-pq-yrk" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fmc-yP-s8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="CafeList" referencedIdentifier="CafeLists" id="rvf-vT-Iy1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="35i-WV-3Hd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1813.5999999999999" y="-321.13943028485761"/>
+            <point key="canvasLocation" x="1710" y="-321"/>
         </scene>
         <!--AlertPractice-->
         <scene sceneID="Spv-eo-Nxe">

@@ -9,7 +9,8 @@
 import UIKit
 
 class CafeListTableViewCell: UITableViewCell {
-
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
