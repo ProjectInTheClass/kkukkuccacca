@@ -19,7 +19,7 @@ class ButtonViewController: UIViewController {
     //MARK:- checkMarkTapped
     @IBAction func checkMarkTapped(_ sender: UIButton) {
         UIView.animate(withDuration: 0.0, delay: 0.0, options: .curveLinear, animations: {
-            sender.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+            sender.transform = CGAffineTransform(scaleX: 0.0, y: 0.0)
             
         }) { (success) in
             UIView.animate(withDuration: 0.0, delay: 0.0, options: .curveLinear, animations: {
