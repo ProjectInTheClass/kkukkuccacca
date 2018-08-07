@@ -25,7 +25,7 @@
 		C24F933F2112E6C300A89826 /* SignatureMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24F933E2112E6C300A89826 /* SignatureMenuViewController.swift */; };
 		C24F93412112E6E200A89826 /* SignatureMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24F93402112E6E200A89826 /* SignatureMenuCollectionViewCell.swift */; };
 		C27CE43B2112F45F0004C4D0 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CE43A2112F45F0004C4D0 /* MenuTableViewCell.swift */; };
-		C27F145E2118200C0063B07F /* CosmosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F145D2118200C0063B07F /* CosmosView.swift */; };
+		C27F1464211838820063B07F /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F1463211838820063B07F /* Star.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +70,7 @@
 		C24F933E2112E6C300A89826 /* SignatureMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureMenuViewController.swift; sourceTree = "<group>"; };
 		C24F93402112E6E200A89826 /* SignatureMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureMenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		C27CE43A2112F45F0004C4D0 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
-		C27F145D2118200C0063B07F /* CosmosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmosView.swift; sourceTree = "<group>"; };
+		C27F1463211838820063B07F /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +121,7 @@
 		0E49EF682108576D00B90C6F /* foodlesummer */ = {
 			isa = PBXGroup;
 			children = (
+				C27F1463211838820063B07F /* Star.swift */,
 				0E49EF692108576D00B90C6F /* AppDelegate.swift */,
 				0E49EF6D2108576D00B90C6F /* Main.storyboard */,
 				0E49EF6B2108576D00B90C6F /* ViewController.swift */,
@@ -129,7 +130,6 @@
 				C24F93402112E6E200A89826 /* SignatureMenuCollectionViewCell.swift */,
 				C27CE43A2112F45F0004C4D0 /* MenuTableViewCell.swift */,
 				0E12F06221141AD300BDDA62 /* CafeList.storyboard */,
-				C27F145D2118200C0063B07F /* CosmosView.swift */,
 				0EFADCB1211582EE00216709 /* modal.swift */,
 				0E12F06421141AF100BDDA62 /* CafeListViewController.swift */,
 				0E12F06C2114453D00BDDA62 /* CafeListTableViewCell.swift */,
@@ -299,8 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C24F93412112E6E200A89826 /* SignatureMenuCollectionViewCell.swift in Sources */,
-				C27F145E2118200C0063B07F /* CosmosView.swift in Sources */,
 				0E12F06521141AF100BDDA62 /* CafeListViewController.swift in Sources */,
+				C27F1464211838820063B07F /* Star.swift in Sources */,
 				0E7C2A9A21130AA300685E29 /* CafeDetailViewController.swift in Sources */,
 				C27CE43B2112F45F0004C4D0 /* MenuTableViewCell.swift in Sources */,
 				0E49EF6C2108576D00B90C6F /* ViewController.swift in Sources */,

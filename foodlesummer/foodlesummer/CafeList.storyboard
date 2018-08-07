@@ -137,8 +137,8 @@
                                     <action selector="heatButtonAction:" destination="6bi-Xb-CLK" eventType="touchUpInside" id="EYf-X5-Esb"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vur-Xf-77V" customClass="CosmosView" customModule="foodlesummer">
-                                <rect key="frame" x="48" y="274" width="246" height="35"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="va9-Uw-6tB" customClass="CosmosView" customModule="foodlesummer">
+                                <rect key="frame" x="38" y="274" width="261" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
