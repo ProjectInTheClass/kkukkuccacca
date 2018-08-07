@@ -82,7 +82,6 @@ class CafeDetailViewController: UIViewController {
     
     //좋아요 버튼
     @IBOutlet weak var heartButton: UIButton!
-    
     @IBAction func heatButtonAction(_ sender: Any) {
         heartButton.isSelected = !heartButton.isSelected
     }
