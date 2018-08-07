@@ -136,6 +136,7 @@
                                 <rect key="frame" x="314" y="234" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="heart_nofilled"/>
+                                <state key="selected" image="heart_filled"/>
                                 <connections>
                                     <action selector="heatButtonAction:" destination="6bi-Xb-CLK" eventType="touchUpInside" id="EYf-X5-Esb"/>
                                 </connections>
@@ -167,6 +168,7 @@
     <resources>
         <image name="arrow_left" width="18" height="30"/>
         <image name="arrow_right" width="18" height="30"/>
+        <image name="heart_filled" width="44" height="44"/>
         <image name="heart_nofilled" width="44" height="44"/>
     </resources>
 </document>
