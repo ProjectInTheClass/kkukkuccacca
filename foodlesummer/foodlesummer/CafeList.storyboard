@@ -47,7 +47,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="6bi-Xb-CLK" kind="show" id="eDe-Cf-1Yc"/>
+                                            <segue destination="6bi-Xb-CLK" kind="show" identifier="detailSegue" id="eDe-Cf-1Yc"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -57,6 +57,9 @@
                         <viewLayoutGuide key="safeArea" id="zUA-7u-tud"/>
                     </view>
                     <navigationItem key="navigationItem" id="VkQ-3o-1hq"/>
+                    <connections>
+                        <outlet property="tableView" destination="LjQ-UN-1ZM" id="fV4-Sa-h6k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BPK-2p-KQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

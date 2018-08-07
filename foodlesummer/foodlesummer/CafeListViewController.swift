@@ -9,8 +9,9 @@
 import UIKit
 
 
-class CafeListViewController: UIViewController,UITableViewDataSource {
-
+class CafeListViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var tableView: UITableView!
+    
     var items = [
         Cafe (cafeNames: "탐앤탐스 고려대점",cafeImages: "image_cafe1",
               cafeHour: "09:00",cafeAddress: "경기도"),
@@ -46,18 +47,22 @@ class CafeListViewController: UIViewController,UITableViewDataSource {
         return cell
     }
 
-//    
-//    // 상세씬 전환
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "detailSegue",
-//            let detailVC = segue.destination as? CafeDetailViewController,
-//            let cell = sender as? UITableViewCell,
-//            let index = self.tableView.indexPath(for: cell)
-//        {
-//            let item = items[index.row]
-//            detailVC.itemt = item
-//        }
-//    }
+
+
+
+    
+    // 상세씬 전환
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailSegue",
+            let detailVC = segue.destination as? CafeDetailViewController,
+            let cell = sender as? UITableViewCell,
+            let index = self.tableView.indexPath(for: cell)
+        {
+            let item = items[index.row]
+            detailVC.itemt = item
+        }
+    }
+
 
 
     
@@ -65,7 +70,8 @@ class CafeListViewController: UIViewController,UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
