@@ -129,10 +129,7 @@
 				C24F933E2112E6C300A89826 /* SignatureMenuViewController.swift */,
 				C24F93402112E6E200A89826 /* SignatureMenuCollectionViewCell.swift */,
 				C27CE43A2112F45F0004C4D0 /* MenuTableViewCell.swift */,
-<<<<<<< HEAD
-=======
 				C27F145D2118200C0063B07F /* CosmosView.swift */,
->>>>>>> f0ce1ddf4857c85af5540bf717d5f61cd58f0ab0
 				0E12F06221141AD300BDDA62 /* CafeList.storyboard */,
 				0EFADCB1211582EE00216709 /* modal.swift */,
 				0E12F06421141AF100BDDA62 /* CafeListViewController.swift */,
