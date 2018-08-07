@@ -1,4 +1,11 @@
-//
+
+
+// 설정 변경하고 싶으면 https://github.com/evgenyneu/Cosmos/wiki/Cosmos-configuration 참고하세요
+// 제가 임의로 바꿔놓은 코드 위에는 "// 변경"이라고 써 놓았습니다 혹시 코딩하다가 별에 대한 설정(ex: 유저가 별 개수를 바꿀 수 있게 해야한다, 혹은 별 개수 초기값) 을 바꾸어야 하는 경우 오면 "변경"이라고 검색해보세요!
+
+var itemz: Cafe?
+
+
 // Star rating control written in Swift for iOS and tvOS.
 //
 // https://github.com/evgenyneu/Cosmos
@@ -383,7 +390,10 @@ struct CosmosDefaultSettings {
      Defines how the star is filled when the rating value is not an integer value. It can either show full stars, half stars or stars partially filled according to the rating value.
      
      */
-    static let fillMode = StarFillMode.full
+    
+    
+    /////변경: 아래 코드를 .half / .precise/ .full로 변경하면 int대신 소숫점으로 별점을 매길 수 있음
+    static let fillMode = StarFillMode.half
     
     /// Rating value that is shown in the storyboard by default.
     static let rating: Double = 2.718281828
@@ -444,7 +454,10 @@ struct CosmosDefaultSettings {
     static let minTouchRating: Double = 1
     
     /// When `true` the star fill level is updated when user touches the cosmos view. When `false` the Cosmos view only shows the rating and does not act as the input control.
-    static let updateOnTouch = true
+    
+    
+    //////변경 : 아래를 true로 바꾸면 유저가 레이팅 변경 가능, 초기값은 아래 코드에서 설정 가능함
+    static let updateOnTouch = false
 }
 
 
@@ -976,7 +989,8 @@ struct CosmosRating {
         if rating > Double(totalNumberOfStars) { return Double(totalNumberOfStars) }
         if rating < 0 { return 0 }
         
-        return rating
+        //////변경: 사용자가 별 개수를 못바꾸게 해야 할 경우, 아래 리턴값을 고정시켜야 하는 별 개수로 지정합니다(x.x 형태로 리턴하세요) // 혹은 별 개수를 바꿀 수 있게 해야 할 경우엔 return rating 이라고 쓰면 됩니다
+        return itemz!.rate
     }
 }
 
@@ -1593,6 +1607,7 @@ import UIKit
         update()
     }
 }
+
 
 
 

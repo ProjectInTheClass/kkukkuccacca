@@ -18,6 +18,15 @@ class CafeDetailViewController: UIViewController {
     @IBOutlet weak var cafeAddress: UILabel!
     
     
+    //카페 불리안
+    
+    @IBOutlet weak var wifiLabel: UILabel!
+    
+    @IBOutlet weak var toiletLabel: UILabel!
+    
+    @IBOutlet weak var parkingLabel: UILabel!
+    
+    @IBOutlet weak var smokingLabel: UILabel!
     
     
     // 상세 정보
@@ -101,6 +110,32 @@ class CafeDetailViewController: UIViewController {
             
             showImage(index: 0)
         }
+        
+        //카페 불리안 색깔 설정
+        if itemt!.cafeWifi == false {
+            wifiLabel.textColor = UIColor.gray
+        } else {
+            wifiLabel.textColor = UIColor.black
+        }
+        
+        if itemt!.cafeToilet == false {
+            toiletLabel.textColor = UIColor.gray
+        } else {
+            toiletLabel.textColor = UIColor.black
+        }
+        
+        if itemt!.cafeSmoking == false {
+            smokingLabel.textColor = UIColor.gray
+        } else {
+            smokingLabel.textColor = UIColor.black
+        }
+        
+        if itemt!.cafeParking == false {
+            parkingLabel.textColor = UIColor.gray
+        } else {
+            parkingLabel.textColor = UIColor.black
+        }
+        
         
     }
     

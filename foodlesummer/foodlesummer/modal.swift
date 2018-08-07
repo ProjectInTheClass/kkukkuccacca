@@ -16,6 +16,13 @@ struct Cafe {
     var cafeImages: String
     var cafeHour: String
     var cafeAddress: String
+    
+    var cafeWifi : Bool
+    var cafeToilet : Bool
+    var cafeSmoking : Bool
+    var cafeParking : Bool
+    
+    var rate : Double
 }
 
 
