@@ -29,8 +29,6 @@ class SignatureMenuViewController: UIViewController, UICollectionViewDataSource,
     
 
     //메뉴 데이터(커피, 차, 프라푸치노)
-    
-    
     let data_coffee_1 = [
         Menu(name: "아메리카노", hotprice: "3500", coolprice: "4000"),
         Menu(name: "카페라떼", hotprice: "4000", coolprice: "4200"),
@@ -301,6 +299,22 @@ class SignatureMenuViewController: UIViewController, UICollectionViewDataSource,
         ]
     
     
+    ///카페 메뉴 어레이
+    let cafeMenu_1 = [data_coffee_1, data_tea_1, data_frappuccino_1]
+    let cafeMenu_2 = [data_coffee_2, data_tea_2, data_frappuccino_2]
+    let cafeMenu_3 = [data_coffee_3, data_tea_3, data_frappuccino_3]
+    let cafeMenu_4 = [data_coffee_4, data_tea_4, data_frappuccino_4]
+    let cafeMenu_5 = [data_coffee_5, data_tea_5, data_frappuccino_5]
+    let cafeMenu_6 = [data_coffee_6, data_tea_6, data_frappuccino_6]
+    let cafeMenu_7 = [data_coffee_7, data_tea_7, data_frappuccino_7]
+    let cafeMenu_8 = [data_coffee_8, data_tea_8, data_frappuccino_8]
+    let cafeMenu_9 = [data_coffee_9, data_tea_9, data_frappuccino_9]
+    let cafeMenu_10 = [data_coffee_10, data_tea_10, data_frappuccino_10]
+    
+    
+    
+    
+    
     
     
     //섹션의 개수(커피, 차, 프라푸치노 총 3개)
@@ -454,16 +468,7 @@ class SignatureMenuViewController: UIViewController, UICollectionViewDataSource,
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+}
+

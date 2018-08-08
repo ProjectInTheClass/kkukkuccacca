@@ -24,6 +24,7 @@ struct Cafe {
     
     var rate : Double
     
+
     var menu :[[Menu]]
     var signature : [Signature]
 }
