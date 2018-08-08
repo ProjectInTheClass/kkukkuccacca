@@ -14,18 +14,20 @@ struct Signature {
     var price : String
 }
 
+///////////////////여기는 메뉴 테이블 셀/////////////////
+
+struct Menu {
+    var name : String
+    var hotprice : String
+    var coolprice : String
+}
+
+
 
 class SignatureMenuViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITableViewDataSource {
     
     
-    ///////////////////여기는 메뉴 테이블 셀/////////////////
-    
-    struct Menu {
-        var name : String
-        var hotprice : String
-        var coolprice : String
-    }
-    
+
     //메뉴 데이터(커피, 차, 프라푸치노)
     
     

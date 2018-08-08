@@ -14,7 +14,7 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
     
     var items = [
         Cafe (cafeNames: "트리아농",cafeImages: "cafe0",
-              cafeHour: "매일 09:00 - 22:00 일요일 휴무",cafeAddress: "서울 강남구 학동로59길 43", cafeWifi : false, cafeToilet : true, cafeSmoking : true, cafeParking : true, rate : 3.5),
+              cafeHour: "매일 09:00 - 22:00 일요일 휴무",cafeAddress: "서울 강남구 학동로59길 43", cafeWifi : false, cafeToilet : true, cafeSmoking : true, cafeParking : true, rate : 3.5,),
         Cafe (cafeNames: "알베르",cafeImages: "cafe1",
               cafeHour: "매일 11:00 - 23:00",cafeAddress: "서울 강남구 강남대로102길 34", cafeWifi : false, cafeToilet : false, cafeSmoking : false, cafeParking : true, rate : 4.0),
         Cafe (cafeNames: "이디야커피랩",cafeImages: "cafe2",

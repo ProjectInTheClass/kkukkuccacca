@@ -22,14 +22,17 @@ struct Cafe {
     var cafeSmoking : Bool
     var cafeParking : Bool
     
-    var menu : 
-    
     var rate : Double
     
-    var menu : Array
-    var signature : Array
+    var menu :[[Menu]]
+    var signature : [Signature]
 }
 
+
+struct menu {
+    var data_coffee: [String]
+    var data_tea: [String]
+}
 
 
 
