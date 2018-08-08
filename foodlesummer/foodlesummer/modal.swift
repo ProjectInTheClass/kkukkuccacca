@@ -22,11 +22,15 @@ struct Cafe {
     var cafeSmoking : Bool
     var cafeParking : Bool
     
+    var menu : 
+    
     var rate : Double
     
     var menu : Array
     var signature : Array
 }
+
+
 
 
 struct Review{
