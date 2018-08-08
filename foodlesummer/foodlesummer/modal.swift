@@ -22,8 +22,12 @@ struct Cafe {
     var cafeSmoking : Bool
     var cafeParking : Bool
     
+    var menu : 
+    
     var rate : Double
 }
+
+
 
 
 struct Review{
