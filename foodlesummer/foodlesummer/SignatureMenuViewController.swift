@@ -336,12 +336,12 @@ class SignatureMenuViewController: UIViewController, UICollectionViewDataSource,
             cell.coolprice.text = data_coffee[indexPath.row].coolprice
             cell.hotprice.text = data_coffee[indexPath.row].hotprice
         
-            return cell} else if indexPath.section == 1 {
+            return cell else if indexPath.section == 1 {
             cell.menuname.text = data_tea[indexPath.row].name
             cell.coolprice.text = data_tea[indexPath.row].coolprice
             cell.hotprice.text = data_tea[indexPath.row].hotprice
             
-            return cell} else{
+            return cell else{
             cell.menuname.text = data_frappuccino[indexPath.row].name
             cell.coolprice.text = data_frappuccino[indexPath.row].coolprice
             cell.hotprice.text = data_frappuccino[indexPath.row].hotprice
@@ -418,7 +418,7 @@ class SignatureMenuViewController: UIViewController, UICollectionViewDataSource,
         Signature(name : "비엔나", picture : UIImage(named: "signature_2")!, price : "4800원"),
         Signature(name : "시그니처 초코", picture : UIImage(named: "signature_1")!, price : "4800원")
     ]
-    var signatureMenu_1 = [
+    var signatureMenu_10 = [
         Signature(name : "메가톤", picture : UIImage(named: "signature_1")!, price : "5000원"),
         Signature(name : "애플시나몬", picture : UIImage(named: "signature_2")!, price : "5000원"),
         Signature(name : "피스타치오", picture : UIImage(named: "signature_1")!, price : "5000원")
