@@ -23,6 +23,9 @@ struct Cafe {
     var cafeParking : Bool
     
     var rate : Double
+    
+    var menu : Array
+    var signature : Array
 }
 
 

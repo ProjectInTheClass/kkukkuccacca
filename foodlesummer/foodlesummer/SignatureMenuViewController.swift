@@ -27,6 +27,8 @@ class SignatureMenuViewController: UIViewController, UICollectionViewDataSource,
     }
     
     //메뉴 데이터(커피, 차, 프라푸치노)
+    
+    
     let data_coffee_1 = [
         Menu(name: "아메리카노", hotprice: "3500", coolprice: "4000"),
         Menu(name: "카페라떼", hotprice: "4000", coolprice: "4200"),
