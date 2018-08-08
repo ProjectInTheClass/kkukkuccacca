@@ -8,7 +8,14 @@
 
 import UIKit
 
-class CafeDetailViewController: UIViewController {
+struct Signature {
+    var name : String
+    var picture : UIImage
+    var price : String
+}
+
+
+class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITableViewDataSource {
     
     @IBOutlet weak var cafeImage: UIImageView!
     @IBOutlet weak var arrowLeft: UIButton!
@@ -98,7 +105,7 @@ class CafeDetailViewController: UIViewController {
     
     
     
-    
+    ////viewwillappear : 카페 키워드 불리안 설정하는 부분.
     override func viewWillAppear(_ animated: Bool) {
         
         if let itemq = itemt{
@@ -135,9 +142,44 @@ class CafeDetailViewController: UIViewController {
         } else {
             parkingLabel.textColor = UIColor.black
         }
-        
-        
+        }
+    
+    //////////////////////////여기부터 메뉴 테이블 셀 & 시그니처 메뉴 콜렉션 넣는 부분.
+    
+    
+    //섹션의 셀 개수(커피, 차, 프라푸치노 총 3개)
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
     }
+    
+    //섹션마다의 셀 개수
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if 0 == section {
+            return itemt!.menu[0].count
+        } else if 1 == section {
+            return item!.menu[1].count
+        } else {
+            return item!.menu[2].count
+        }
+    }
+    
+    //섹션마다의 제목 붙여줌
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "coffee"
+        } else if section == 1 {
+            return "tea"
+        } else {
+            return "Fraqquccino"
+        }
+        
+        //셀 정보 입력
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    
+
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
