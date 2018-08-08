@@ -26,5 +26,13 @@ struct Cafe {
 }
 
 
+struct Review{
+    var date: String
+    var review: String
+    var reviewRate: Double
+    var nickName: String
+    var userImage: String
+}
+
 
 
