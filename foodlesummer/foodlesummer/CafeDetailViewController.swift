@@ -173,9 +173,39 @@ class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UI
             return "Fraqquccino"
         }
         
-        //셀 정보 입력
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    
+    //셀 정보 입력
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Menucell", for: indexPath) as! MenuTableViewCell
+        
+        if indexPath.section == 0 {
+            cell.menuname.text = item!.menu[0][indexPath.row].name
+            cell.coolprice.text = item!.menu[0][indexPath.row].coolprice
+            cell.hotprice.text = item!.menu[0][indexPath.row].hotprice
+            
+            return cell} else if indexPath.section == 1 {
+                cell.menuname.text = item!.menu[1][indexPath.row].name
+                cell.coolprice.text = item!.menu[1][indexPath.row].coolprice
+                cell.hotprice.text = item!.menu[1][indexPath.row].hotprice
+                
+            return cell} else{
+                    cell.menuname.text = item!.menu[2][indexPath.row].name
+                    cell.coolprice.text = item!.menu[2][indexPath.row].coolprice
+                    cell.hotprice.text = item!.menu[2][indexPath.row].hotprice
+                    
+                    return cell
+        }
+        }
+        //////////여기서부턴 시그니처 콜렉션 뷰 셀
+        
+        //셀 크기 조정하는 부분
+        
+        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+            let width = collectionView.frame.size.width / 2 - 2
+            let height = width * 1.2
+            let size = CGSize(width: width, height: height)
+            return size
+        }
     
 
     
