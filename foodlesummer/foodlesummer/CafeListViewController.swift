@@ -14,11 +14,11 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
     
     var items = [
         Cafe (cafeNames: "탐앤탐스 고려대점",cafeImages: "image_cafe1",
-              cafeHour: "09:00",cafeAddress: "경기도", cafeWifi : false, cafeToilet : false, cafeSmoking : true, cafeParking : true, rate : 3.5),
+              cafeHour: "09:00",cafeAddress: "경기도", cafeWifi : false, cafeToilet : false, cafeSmoking : true, cafeParking : true, rate : 5.0),
         Cafe (cafeNames: "탐앤탐스 고려대점",cafeImages: "image_cafe1",
-              cafeHour: "09:00",cafeAddress: "경기도", cafeWifi : false, cafeToilet : false, cafeSmoking : false, cafeParking : true, rate : 4.0),
+              cafeHour: "09:00",cafeAddress: "경기도", cafeWifi : false, cafeToilet : false, cafeSmoking : true, cafeParking : true, rate : 5.0),
         Cafe (cafeNames: "탐앤탐스 고려대점",cafeImages: "image_cafe1",
-              cafeHour: "09:00",cafeAddress: "경기도", cafeWifi : false, cafeToilet : false, cafeSmoking : true, cafeParking : true, rate : 2.5),
+              cafeHour: "09:00",cafeAddress: "경기도", cafeWifi : false, cafeToilet : false, cafeSmoking : true, cafeParking : true, rate : 5.0),
         Cafe (cafeNames: "탐앤탐스 고려대점",cafeImages: "image_cafe1",
               cafeHour: "09:00",cafeAddress: "경기도", cafeWifi : false, cafeToilet : false, cafeSmoking : true, cafeParking : true, rate : 5.0),
         Cafe (cafeNames: "탐앤탐스 고려대점",cafeImages: "image_cafe1",
