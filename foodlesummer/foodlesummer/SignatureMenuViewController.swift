@@ -25,7 +25,7 @@ struct Menu {
 
 
 class SignatureMenuViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITableViewDataSource {
-    
+
     
 
     //메뉴 데이터(커피, 차, 프라푸치노)
@@ -366,13 +366,9 @@ class SignatureMenuViewController: UIViewController, UICollectionViewDataSource,
             
             return cell
             
-            
+                
         }
     }
-    
-            
-    
-    
     
     /////////////여기부턴 시그니처 콜렉션 뷰 셀///////////////////////
     //셀 크기 조정하는 부분
@@ -472,4 +468,4 @@ class SignatureMenuViewController: UIViewController, UICollectionViewDataSource,
 
 }
 }
-
+}
