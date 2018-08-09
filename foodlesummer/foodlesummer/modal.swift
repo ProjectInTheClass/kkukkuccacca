@@ -25,14 +25,24 @@ struct Cafe {
     var rate : Double
     
 
-    var menu :[[Menu]]
+    var menu_coffee : [Menu]
+    var menu_tea : [Menu]
+    var menu_frappuccino : [Menu]
+    
+    
     var signature : [Signature]
 }
 
+struct Signature {
+    var name : String
+    var picture : String
+    var price : String
+}
 
-struct menu {
-    var data_coffee: [String]
-    var data_tea: [String]
+struct Menu {
+    var name : String
+    var hotprice : String
+    var coolprice : String
 }
 
 

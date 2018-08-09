@@ -300,16 +300,16 @@ class SignatureMenuViewController: UIViewController, UICollectionViewDataSource,
     
     
     ///카페 메뉴 어레이
-    let cafeMenu_1 = [data_coffee_1, data_tea_1, data_frappuccino_1]
-    let cafeMenu_2 = [data_coffee_2, data_tea_2, data_frappuccino_2]
-    let cafeMenu_3 = [data_coffee_3, data_tea_3, data_frappuccino_3]
-    let cafeMenu_4 = [data_coffee_4, data_tea_4, data_frappuccino_4]
-    let cafeMenu_5 = [data_coffee_5, data_tea_5, data_frappuccino_5]
-    let cafeMenu_6 = [data_coffee_6, data_tea_6, data_frappuccino_6]
-    let cafeMenu_7 = [data_coffee_7, data_tea_7, data_frappuccino_7]
-    let cafeMenu_8 = [data_coffee_8, data_tea_8, data_frappuccino_8]
-    let cafeMenu_9 = [data_coffee_9, data_tea_9, data_frappuccino_9]
-    let cafeMenu_10 = [data_coffee_10, data_tea_10, data_frappuccino_10]
+//    let cafeMenu_1 = [data_coffee_1, data_tea_1, data_frappuccino_1]
+//    let cafeMenu_2 = [data_coffee_2, data_tea_2, data_frappuccino_2]
+//    let cafeMenu_3 = [data_coffee_3, data_tea_3, data_frappuccino_3]
+//    let cafeMenu_4 = [data_coffee_4, data_tea_4, data_frappuccino_4]
+//    let cafeMenu_5 = [data_coffee_5, data_tea_5, data_frappuccino_5]
+//    let cafeMenu_6 = [data_coffee_6, data_tea_6, data_frappuccino_6]
+//    let cafeMenu_7 = [data_coffee_7, data_tea_7, data_frappuccino_7]
+//    let cafeMenu_8 = [data_coffee_8, data_tea_8, data_frappuccino_8]
+//    let cafeMenu_9 = [data_coffee_9, data_tea_9, data_frappuccino_9]
+//    let cafeMenu_10 = [data_coffee_10, data_tea_10, data_frappuccino_10]
     
     
     
@@ -350,16 +350,16 @@ class SignatureMenuViewController: UIViewController, UICollectionViewDataSource,
         let cell = tableView.dequeueReusableCell(withIdentifier: "Menucell", for: indexPath) as! MenuTableViewCell
         
         if indexPath.section == 0 {
-            cell.menuname.text = data_coffee[indexPath.row].name
+            cell.menuname.text = data_coffee_1[indexPath.row].name
             cell.coolprice.text = data_coffee[indexPath.row].coolprice
             cell.hotprice.text = data_coffee[indexPath.row].hotprice
         
-            return cell else if indexPath.section == 1 {
+            return cell} else if indexPath.section == 1 {
             cell.menuname.text = data_tea[indexPath.row].name
             cell.coolprice.text = data_tea[indexPath.row].coolprice
             cell.hotprice.text = data_tea[indexPath.row].hotprice
             
-            return cell else{
+            return cell} else{
             cell.menuname.text = data_frappuccino[indexPath.row].name
             cell.coolprice.text = data_frappuccino[indexPath.row].coolprice
             cell.hotprice.text = data_frappuccino[indexPath.row].hotprice
