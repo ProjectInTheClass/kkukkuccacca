@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+import UIKit
 
 //구조체 만들기
 struct Cafe {
@@ -35,7 +35,7 @@ struct Cafe {
 
 struct Signature {
     var name : String
-    var picture : String
+    var picture : UIImage
     var price : String
 }
 

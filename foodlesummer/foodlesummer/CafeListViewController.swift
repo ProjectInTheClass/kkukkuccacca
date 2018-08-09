@@ -286,80 +286,59 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
     
     //시그니처 메뉴(배열에 메뉴 추가하면 콜렉션 뷰에 추가됨)
     var signatureMenu_1 = [
-        Signature(name : "포멜로 주스", picture : "signature_1" , price : "5000원"),
-        Signature(name : "코코넛 워터", picture :  "signature_2", price : "4800원"),
-        Signature(name : "수박 주스", picture : "signature_2" , price : "2000원")
+        Signature(name : "포멜로 주스", picture : UIImage(named:"signature_1")! , price : "5000원"),
+        Signature(name : "코코넛 워터", picture :  UIImage(named:"signature_2")!, price : "4800원"),
+        Signature(name : "수박 주스", picture : UIImage(named:"signature_2")! , price : "2000원")
     ]
     
     var signatureMenu_2 = [
-        Signature(name : "카페 로자", picture : "signature_2", price : "5000원"),
-        Signature(name : "카페 얼그레이", picture : "signature_2", price : "5200원"),
-        Signature(name : "카페 오롱", picture : "signature_2", price : "3500원")
+        Signature(name : "카페 로자", picture : UIImage(named:"signature_2")!, price : "5000원"),
+        Signature(name : "카페 얼그레이", picture : UIImage(named:"signature_2")!, price : "5200원"),
+        Signature(name : "카페 오롱", picture : UIImage(named:"signature_2")!, price : "3500원")
     ]
     var signatureMenu_3 = [
-        Signature(name : "카페 마살라", picture : "signature_2", price : "4000원"),
-        Signature(name : "카페 진저", picture : "signature_2", price : "4800원"),
-        Signature(name : "카페 트러플", picture : "signature_2", price : "6000원")
+        Signature(name : "카페 마살라", picture : UIImage(named:"signature_2")!, price : "4000원"),
+        Signature(name : "카페 진저", picture : UIImage(named:"signature_2")!, price : "4800원"),
+        Signature(name : "카페 트러플", picture : UIImage(named:"signature_2")!, price : "6000원")
     ]
     var signatureMenu_4 = [
-        Signature(name : "비타파인애플 라떼", picture : "signature_2", price : "5200원"),
-        Signature(name : "비타민트", picture : "signature_2", price : "5500원"),
-        Signature(name : "인퓨징 워터", picture : "signature_2", price : "5000원")
+        Signature(name : "비타파인애플 라떼", picture : UIImage(named:"signature_2")!, price : "5200원"),
+        Signature(name : "비타민트", picture : UIImage(named:"signature_2")!, price : "5500원"),
+        Signature(name : "인퓨징 워터", picture : UIImage(named:"signature_2")!, price : "5000원")
     ]
     var signatureMenu_5 = [
-        Signature(name : "메리 초코", picture : "signature_2", price : "5300원"),
-        Signature(name : "메리 치즈", picture : "signature_2", price : "4000원"),
-        Signature(name : "메리 망고", picture : "signature_2", price : "5300원")
+        Signature(name : "메리 초코", picture : UIImage(named:"signature_2")!, price : "5300원"),
+        Signature(name : "메리 치즈", picture : UIImage(named:"signature_2")!, price : "4000원"),
+        Signature(name : "메리 망고", picture : UIImage(named:"signature_2")!, price : "5300원")
     ]
     var signatureMenu_6 = [
-        Signature(name : "복분자 요거트", picture : "signature_2", price : "4800원"),
-        Signature(name : "쑥떡쑥떡 빙수", picture : "signature_2", price : "4800원"),
-        Signature(name : "인절미 라떼", picture : "signature_2", price : "5000원")
+        Signature(name : "복분자 요거트", picture : UIImage(named:"signature_2")!, price : "4800원"),
+        Signature(name : "쑥떡쑥떡 빙수", picture : UIImage(named:"signature_2")!, price : "4800원"),
+        Signature(name : "인절미 라떼", picture : UIImage(named:"signature_2")!, price : "5000원")
     ]
     var signatureMenu_7 = [
-        Signature(name : "수박 스무디", picture : "signature_2", price : "4800원"),
-        Signature(name : "요거트 쉐이크", picture : "signature_2", price : "5200원"),
-        Signature(name : "메리 수박", picture : "signature_2", price : "3500원")
+        Signature(name : "수박 스무디", picture : UIImage(named:"signature_2")!, price : "4800원"),
+        Signature(name : "요거트 쉐이크", picture : UIImage(named:"signature_2")!, price : "5200원"),
+        Signature(name : "메리 수박", picture : UIImage(named:"signature_2")!, price : "3500원")
     ]
     var signatureMenu_8 = [
-        Signature(name : "당근 주스", picture : "signature_2", price : "3500원"),
-        Signature(name : "크림 더치 커피", picture : "signature_2", price : "4800원"),
-        Signature(name : "수프리모", picture : "signature_2", price : "3500원")
+        Signature(name : "당근 주스", picture : UIImage(named:"signature_2")!, price : "3500원"),
+        Signature(name : "크림 더치 커피", picture : UIImage(named:"signature_2")!, price : "4800원"),
+        Signature(name : "수프리모", picture : UIImage(named:"signature_2")!, price : "3500원")
     ]
     var signatureMenu_9 = [
-        Signature(name : "플랫화이트", picture : "signature_2", price : "4800원"),
-        Signature(name : "비엔나", picture : "signature_2", price : "4800원"),
-        Signature(name : "시그니처 초코", picture : "signature_2", price : "4800원")
+        Signature(name : "플랫화이트", picture : UIImage(named:"signature_2")!, price : "4800원"),
+        Signature(name : "비엔나", picture : UIImage(named:"signature_2")!, price : "4800원"),
+        Signature(name : "시그니처 초코", picture : UIImage(named:"signature_2")!, price : "4800원")
     ]
     var signatureMenu_10 = [
-        Signature(name : "메가톤", picture : "signature_2", price : "5000원"),
-        Signature(name : "애플시나몬", picture : "signature_2", price : "5000원"),
-        Signature(name : "피스타치오", picture : "signature_2", price : "5000원")
+        Signature(name : "메가톤", picture : UIImage(named:"signature_2")!, price : "5000원"),
+        Signature(name : "애플시나몬", picture : UIImage(named:"signature_2")!, price : "5000원"),
+        Signature(name : "피스타치오", picture : UIImage(named:"signature_2")!, price : "5000원")
     ]
     
-    var items = [
-        Cafe(cafeNames: "트리아농",cafeImages: "cafe0",
-              cafeHour: "매일 09:00 - 22:00 일요일 휴무",cafeAddress: "서울 강남구 학동로59길 43", cafeWifi : false, cafeToilet : true, cafeSmoking : true, cafeParking : true, rate : 3.5, menu_coffee : data_coffee_1 , menu_tea : data_tea_1 , menu_frappuccino : data_frappuccino_1 , signature : signatureMenu_1),
-        Cafe (cafeNames: "알베르",cafeImages: "cafe1",
-              cafeHour: "매일 11:00 - 23:00",cafeAddress: "서울 강남구 강남대로102길 34", cafeWifi : false, cafeToilet : false, cafeSmoking : false, cafeParking : true, rate : 4.0, menu_coffee : data_coffee_2, signature : signatureMenu_2),
-        Cafe (cafeNames: "이디야커피랩",cafeImages: "cafe2",
-              cafeHour: "매일 07:30 - 02:00",cafeAddress: "서울 강남구 논현로 636", cafeWifi : false, cafeToilet : false, cafeSmoking : true, cafeParking : true, rate : 2.5,menu_coffee : data_coffee_3, signature : signatureMenu_3),
-        Cafe (cafeNames: "오아시스",cafeImages: "cafe3",
-              cafeHour: "평일 09:00 - 20:00",cafeAddress: "서울 강남구 도산대로55길 20", cafeWifi : true, cafeToilet : false, cafeSmoking : true, cafeParking : false, rate : 5.0,menu_coffee : data_coffee_4, signature : signatureMenu_4),
-        Cafe (cafeNames: "미엘",cafeImages: "cafe4",
-              cafeHour: "매일 11:00 - 24:00",cafeAddress: "서울 강남구 도산대로67길 13-12", cafeWifi : true, cafeToilet : true, cafeSmoking : false, cafeParking : false, rate : 5.0,menu_coffee : data_coffee_5, signature : signatureMenu_5),
-        Cafe (cafeNames: "cafe_the_healing",cafeImages: "cafe5",
-              cafeHour: "09:00 ~ 21:00",cafeAddress: "서울 광진구 능동로11길 10", cafeWifi : false, cafeToilet : false, cafeSmoking : true, cafeParking : true, rate : 5.0,menu_coffee : data_coffee_6, signature : signatureMenu_6),
-        Cafe (cafeNames: "Less is More",cafeImages: "cafe6",
-              cafeHour: "08:00 ~ 22:00",cafeAddress: "서울 광진구 동일로20길 89", cafeWifi : true, cafeToilet : false, cafeSmoking : false, cafeParking : true, rate : 5.0,menu_coffee : data_coffee_7, signature : signatureMenu_7),
-        Cafe (cafeNames: "103 express",cafeImages: "cafe7",
-              cafeHour: "08:00 ~ 18:00",cafeAddress: "서울 광진구 능동로13길 23", cafeWifi : false, cafeToilet : false, cafeSmoking : false, cafeParking : false, rate : 5.0,menu_coffee : data_coffee_8, signature : signatureMenu_8),
-        Cafe (cafeNames: "Cafe_be_Happy",cafeImages: "cafe8",
-              cafeHour: "09:00 ~ 23:00",cafeAddress: "서울 광진구 동일로22길", cafeWifi : false, cafeToilet : false, cafeSmoking : true, cafeParking : false, rate : 5.0,menu_coffee : data_coffee_9, signature : signatureMenu_9),
-        Cafe (cafeNames: "Silverlick",cafeImages: "cafe9",
-              cafeHour: "08:00 ~ 24:00",cafeAddress: "서울 광진구 능동로50길 9", cafeWifi : false, cafeToilet : false, cafeSmoking : false, cafeParking : false, rate : 5.0,menu_coffee : data_coffee_10, signature : signatureMenu_10)
-        
-        ]
+    var items: [Cafe] = []
+    
     
     
     
@@ -400,12 +379,33 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
             detailVC.itemt = item }
     }
 
-
-
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        items = [
+            Cafe(cafeNames: "트리아농",cafeImages: "cafe0",
+                 cafeHour: "매일 09:00 - 22:00 일요일 휴무",cafeAddress: "서울 강남구 학동로59길 43", cafeWifi : false, cafeToilet : true, cafeSmoking : true, cafeParking : true, rate : 3.5, menu_coffee : data_coffee_1 , menu_tea : data_tea_1 , menu_frappuccino : data_frappuccino_1 , signature : signatureMenu_1),
+            Cafe (cafeNames: "알베르",cafeImages: "cafe1",
+                  cafeHour: "매일 11:00 - 23:00",cafeAddress: "서울 강남구 강남대로102길 34", cafeWifi : false, cafeToilet : false, cafeSmoking : false, cafeParking : true, rate : 4.0, menu_coffee : data_coffee_2,menu_tea : data_tea_2 , menu_frappuccino : data_frappuccino_2, signature : signatureMenu_2),
+            Cafe (cafeNames: "이디야커피랩",cafeImages: "cafe2",
+                  cafeHour: "매일 07:30 - 02:00",cafeAddress: "서울 강남구 논현로 636", cafeWifi : false, cafeToilet : false, cafeSmoking : true, cafeParking : true, rate : 2.5,menu_coffee : data_coffee_3,menu_tea : data_tea_3 , menu_frappuccino : data_frappuccino_3, signature : signatureMenu_3),
+            Cafe (cafeNames: "오아시스",cafeImages: "cafe3",
+                  cafeHour: "평일 09:00 - 20:00",cafeAddress: "서울 강남구 도산대로55길 20", cafeWifi : true, cafeToilet : false, cafeSmoking : true, cafeParking : false, rate : 5.0,menu_coffee : data_coffee_4,menu_tea : data_tea_4 , menu_frappuccino : data_frappuccino_4, signature : signatureMenu_4),
+            Cafe (cafeNames: "미엘",cafeImages: "cafe4",
+                  cafeHour: "매일 11:00 - 24:00",cafeAddress: "서울 강남구 도산대로67길 13-12", cafeWifi : true, cafeToilet : true, cafeSmoking : false, cafeParking : false, rate : 5.0,menu_coffee : data_coffee_5,menu_tea : data_tea_5 , menu_frappuccino : data_frappuccino_5, signature : signatureMenu_5),
+            Cafe (cafeNames: "cafe_the_healing",cafeImages: "cafe5",
+                  cafeHour: "09:00 ~ 21:00",cafeAddress: "서울 광진구 능동로11길 10", cafeWifi : false, cafeToilet : false, cafeSmoking : true, cafeParking : true, rate : 5.0,menu_coffee : data_coffee_6,menu_tea : data_tea_6 , menu_frappuccino : data_frappuccino_6, signature : signatureMenu_6),
+            Cafe (cafeNames: "Less is More",cafeImages: "cafe6",
+                  cafeHour: "08:00 ~ 22:00",cafeAddress: "서울 광진구 동일로20길 89", cafeWifi : true, cafeToilet : false, cafeSmoking : false, cafeParking : true, rate : 5.0,menu_coffee : data_coffee_7,menu_tea : data_tea_7 , menu_frappuccino : data_frappuccino_7, signature : signatureMenu_7),
+            Cafe (cafeNames: "103 express",cafeImages: "cafe7",
+                  cafeHour: "08:00 ~ 18:00",cafeAddress: "서울 광진구 능동로13길 23", cafeWifi : false, cafeToilet : false, cafeSmoking : false, cafeParking : false, rate : 5.0,menu_coffee : data_coffee_8,menu_tea : data_tea_8 , menu_frappuccino : data_frappuccino_8, signature : signatureMenu_8),
+            Cafe (cafeNames: "Cafe_be_Happy",cafeImages: "cafe8",
+                  cafeHour: "09:00 ~ 23:00",cafeAddress: "서울 광진구 동일로22길", cafeWifi : false, cafeToilet : false, cafeSmoking : true, cafeParking : false, rate : 5.0,menu_coffee : data_coffee_9,menu_tea : data_tea_9 , menu_frappuccino : data_frappuccino_9, signature : signatureMenu_9),
+            Cafe (cafeNames: "Silverlick",cafeImages: "cafe9",
+                  cafeHour: "08:00 ~ 24:00",cafeAddress: "서울 광진구 능동로50길 9", cafeWifi : false, cafeToilet : false, cafeSmoking : false, cafeParking : false, rate : 5.0,menu_coffee : data_coffee_10,menu_tea : data_tea_10 , menu_frappuccino : data_frappuccino_10, signature : signatureMenu_10)
+            
+        ]
 
         tableView.delegate = self
         tableView.dataSource = self
