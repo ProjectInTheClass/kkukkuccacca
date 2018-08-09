@@ -55,7 +55,7 @@ class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UI
     
     //이미지 넣기
     func showImage(index: Int) {
-        let imageName = images[index]
+        let imageName = itemt!.cafeInfoImage[index]
         cafeImage.image = UIImage(named: imageName)
         // 좌/우 이미지 이동이 불가능한 상태면 버튼 상태를 disabled로
         arrowLeft.isEnabled = index > 0
