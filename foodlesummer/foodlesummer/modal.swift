@@ -31,6 +31,8 @@ struct Cafe {
     
     
     var signature : [Signature]
+    
+    var cafeInfoImage : [String]
 }
 
 struct Signature {
