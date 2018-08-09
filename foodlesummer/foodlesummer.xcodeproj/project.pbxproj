@@ -21,6 +21,7 @@
 		0E49EF8A2108576F00B90C6F /* foodlesummerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49EF892108576F00B90C6F /* foodlesummerUITests.swift */; };
 		0E7C2A202111DE6300685E29 /* ExampleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7C2A1F2111DE6300685E29 /* ExampleStoryboard.storyboard */; };
 		0E7C2A9A21130AA300685E29 /* CafeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7C2A9921130AA300685E29 /* CafeDetailViewController.swift */; };
+		0EB7C94B211C19FE0070B3D7 /* ChildViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C94A211C19FE0070B3D7 /* ChildViewControllers.swift */; };
 		0EFADCB2211582EE00216709 /* modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFADCB1211582EE00216709 /* modal.swift */; };
 		7A69BAC9E7E73D576211B83E /* Pods_foodlesummerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413297603895BD638767FAC7 /* Pods_foodlesummerUITests.framework */; };
 		AD147323019174FFF2CB14CA /* Pods_foodlesummer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E0C083233DB55AA93898DF /* Pods_foodlesummer.framework */; };
@@ -69,6 +70,7 @@
 		0E49EF8B2108576F00B90C6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E7C2A1F2111DE6300685E29 /* ExampleStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExampleStoryboard.storyboard; sourceTree = "<group>"; };
 		0E7C2A9921130AA300685E29 /* CafeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeDetailViewController.swift; sourceTree = "<group>"; };
+		0EB7C94A211C19FE0070B3D7 /* ChildViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewControllers.swift; sourceTree = "<group>"; };
 		0EFADCB1211582EE00216709 /* modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modal.swift; sourceTree = "<group>"; };
 		413297603895BD638767FAC7 /* Pods_foodlesummerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_foodlesummerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B3FC4798BCD21CED367107 /* Pods-foodlesummer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodlesummer.release.xcconfig"; path = "Pods/Target Support Files/Pods-foodlesummer/Pods-foodlesummer.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				0E12F06221141AD300BDDA62 /* CafeList.storyboard */,
 				0EFADCB1211582EE00216709 /* modal.swift */,
 				0E12F06421141AF100BDDA62 /* CafeListViewController.swift */,
+				0EB7C94A211C19FE0070B3D7 /* ChildViewControllers.swift */,
 				0E12F06C2114453D00BDDA62 /* CafeListTableViewCell.swift */,
 				0E7C2A9921130AA300685E29 /* CafeDetailViewController.swift */,
 				0E12F066211428F100BDDA62 /* AlertPractice.storyboard */,
@@ -428,6 +431,7 @@
 				0E12F0692114298A00BDDA62 /* AlertPracticeViewController.swift in Sources */,
 				0E12F06D2114453D00BDDA62 /* CafeListTableViewCell.swift in Sources */,
 				0E49EF6A2108576D00B90C6F /* AppDelegate.swift in Sources */,
+				0EB7C94B211C19FE0070B3D7 /* ChildViewControllers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

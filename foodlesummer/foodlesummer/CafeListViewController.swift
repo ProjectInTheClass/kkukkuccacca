@@ -371,7 +371,7 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
     // 상세씬 전환
       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailSegue",
-            let detailVC = segue.destination as? CafeDetailViewController,
+            let detailVC = segue.destination.childViewControllers[0] as? CafeDetailViewController,
             let cell = sender as? UITableViewCell,
             let index = self.tableView.indexPath(for: cell)
             {

@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="-1031.2" y="-75.112443778110944"/>
         </scene>
-        <!--View Controller-->
+        <!--Child View Controllers-->
         <scene sceneID="lXz-Kz-Lo3">
             <objects>
-                <viewController id="nuL-rI-3me" sceneMemberID="viewController">
+                <viewController id="nuL-rI-3me" customClass="ChildViewControllers" customModule="foodlesummer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EgB-Uj-BwU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
