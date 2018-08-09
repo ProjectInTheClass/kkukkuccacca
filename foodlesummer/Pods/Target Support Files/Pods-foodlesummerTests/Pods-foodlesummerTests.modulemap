@@ -1,0 +1,6 @@
+framework module Pods_foodlesummerTests {
+  umbrella header "Pods-foodlesummerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
