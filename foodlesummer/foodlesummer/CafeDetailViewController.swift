@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
-
-
-
+class MyPagerTabStripName: ButtonBarPagerTabStripViewController {
+    
+}
 
 class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITableViewDataSource {
 
