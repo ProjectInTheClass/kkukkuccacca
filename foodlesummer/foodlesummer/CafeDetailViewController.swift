@@ -463,16 +463,22 @@ class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UI
         let cell = tableView.dequeueReusableCell(withIdentifier: "Menucell", for: indexPath) as! MenuTableViewCell
         
         if indexPath.section == 0 {
-            cell.menuname.text = itemt!.menu[0][indexPath.row].name
+            cell.menuname.text = itemt!.menu_coffee[0][indexPath.row].name
             cell.coolprice.text = itemt!.menu[0][indexPath.row].coolprice
             cell.hotprice.text = itemt!.menu[0][indexPath.row].hotprice
             
-            return cell} else if indexPath.section == 1 {
+            return cell
+            
+        }
+        else if indexPath.section == 1 {
                 cell.menuname.text = itemt!.menu[1][indexPath.row].name
                 cell.coolprice.text = itemt!.menu[1][indexPath.row].coolprice
                 cell.hotprice.text = itemt!.menu[1][indexPath.row].hotprice
                 
-            return cell} else{
+            return cell
+            
+        }
+        else{
                     cell.menuname.text = itemt!.menu[2][indexPath.row].name
                     cell.coolprice.text = itemt!.menu[2][indexPath.row].coolprice
                     cell.hotprice.text = itemt!.menu[2][indexPath.row].hotprice
@@ -488,7 +494,7 @@ class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UI
         
         //셀 크기 조정하는 부분
         
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             let width = collectionView.frame.size.width / 2 - 2
             let height = width * 1.2
             let size = CGSize(width: width, height: height)
