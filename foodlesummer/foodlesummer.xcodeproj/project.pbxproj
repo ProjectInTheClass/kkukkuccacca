@@ -28,6 +28,7 @@
 		C24F93412112E6E200A89826 /* SignatureMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24F93402112E6E200A89826 /* SignatureMenuCollectionViewCell.swift */; };
 		C27CE43B2112F45F0004C4D0 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27CE43A2112F45F0004C4D0 /* MenuTableViewCell.swift */; };
 		C27F1464211838820063B07F /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F1463211838820063B07F /* Star.swift */; };
+		C2929446211D7E870076A681 /* CafeListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2929445211D7E870076A681 /* CafeListCollectionViewCell.swift */; };
 		C29DBE2E211AC0D100750351 /* CafeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29DBE2D211AC0D100750351 /* CafeMenu.swift */; };
 		F0337361F03302D704C80E18 /* Pods_foodlesummerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8721D4E6D928144CD3465E /* Pods_foodlesummerTests.framework */; };
 /* End PBXBuildFile section */
@@ -82,6 +83,7 @@
 		C24F93402112E6E200A89826 /* SignatureMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureMenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		C27CE43A2112F45F0004C4D0 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		C27F1463211838820063B07F /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		C2929445211D7E870076A681 /* CafeListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeListCollectionViewCell.swift; sourceTree = "<group>"; };
 		C29DBE2D211AC0D100750351 /* CafeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeMenu.swift; sourceTree = "<group>"; };
 		C597093CC7392A5D16C9BEBE /* Pods-foodlesummer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodlesummer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-foodlesummer/Pods-foodlesummer.debug.xcconfig"; sourceTree = "<group>"; };
 		E9C19989CC7F7253D7E7DAC4 /* Pods-foodlesummerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodlesummerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-foodlesummerUITests/Pods-foodlesummerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				0E12F06C2114453D00BDDA62 /* CafeListTableViewCell.swift */,
 				C27CE43A2112F45F0004C4D0 /* MenuTableViewCell.swift */,
 				0E12F06221141AD300BDDA62 /* CafeList.storyboard */,
+				C2929445211D7E870076A681 /* CafeListCollectionViewCell.swift */,
 				0EFADCB1211582EE00216709 /* modal.swift */,
 				0E4A226D211D610B00AD24E6 /* CafeListCellTableViewCell.swift */,
 				0E12F06421141AF100BDDA62 /* CafeListViewController.swift */,
@@ -421,6 +424,7 @@
 			files = (
 				C24F93412112E6E200A89826 /* SignatureMenuCollectionViewCell.swift in Sources */,
 				0EB7C94D211C3E420070B3D7 /* CafeListBridgeViewController.swift in Sources */,
+				C2929446211D7E870076A681 /* CafeListCollectionViewCell.swift in Sources */,
 				C29DBE2E211AC0D100750351 /* CafeMenu.swift in Sources */,
 				0E4A226E211D610B00AD24E6 /* CafeListCellTableViewCell.swift in Sources */,
 				0E4A226C211D527800AD24E6 /* CafeDetailTableViewController.swift in Sources */,

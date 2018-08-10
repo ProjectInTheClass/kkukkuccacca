@@ -9,7 +9,43 @@
 import UIKit
 
 
-class CafeListViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
+class CafeListViewController: UIViewController,UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+
+    
+    //콜렉션 뷰 코드
+    //섹션 내에 속한 셀의 개수
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    
+    
+    
+    //func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    //    let cell = tableView.dequeueReusableCell(withIdentifier: "CafeListCell", for: indexPath) as! CafeListTableViewCell
+        
+    //    let item: Cafe = items[indexPath.row]
+        
+    //    cell.textLabel?.text = item.cafeNames
+    //    cell.imageView?.image = UIImage(named: item.cafeImages)
+        
+        
+    //    return cell
+    
+    //각 항목에 대한 셀 객체 공급
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CafeList", for: indexPath) as! CafeListCollectionViewCell
+        
+
+        cell.cafePicture.image = UIImage(named: items[indexPath.row].cafeImages)
+        cell.cafeLabel.text = items[indexPath.row].cafeNames
+        
+        
+        return cell
+    }
+    
     
     
     @IBOutlet weak var tableView: UITableView!
