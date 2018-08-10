@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+import UIKit
 
 //구조체 만들기
 struct Cafe {
@@ -25,18 +25,39 @@ struct Cafe {
     var rate : Double
     
 
+<<<<<<< HEAD
     
     
     var menu1 : [Menu]
     var menu2 : [Menu]
     var menu3 : [Menu]
+=======
+    var menu_coffee : [Menu]
+    var menu_tea : [Menu]
+    var menu_frappuccino : [Menu]
+    
+    
+>>>>>>> 867e338927dd96273bdde4f497cb7c1be878b64b
     var signature : [Signature]
+    
+    var cafeInfoImage : [String]
 }
 
+struct Signature {
+    var name : String
+    var picture : UIImage
+    var price : String
+}
 
 struct Menu {
+<<<<<<< HEAD
     var data_coffee: [String]
     var data_tea: [String]
+=======
+    var name : String
+    var hotprice : String
+    var coolprice : String
+>>>>>>> 867e338927dd96273bdde4f497cb7c1be878b64b
 }
 
 

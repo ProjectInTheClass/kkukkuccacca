@@ -990,7 +990,7 @@ struct CosmosRating {
         if rating < 0 { return 0 }
         
         //////변경: 사용자가 별 개수를 못바꾸게 해야 할 경우, 아래 리턴값을 고정시켜야 하는 별 개수로 지정합니다(x.x 형태로 리턴하세요) // 혹은 별 개수를 바꿀 수 있게 해야 할 경우엔 return rating 이라고 쓰면 됩니다
-        return itemz!.rate
+        return 3.5
     }
 }
 
