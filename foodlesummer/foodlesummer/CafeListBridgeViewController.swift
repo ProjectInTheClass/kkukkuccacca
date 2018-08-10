@@ -10,26 +10,34 @@ import UIKit
 //import XLPagerTabStrip
 //
 //class MyPagerTabStripName: ButtonBarPagerTabStripViewController {
-//    
+//
 //}
 
-class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITableViewDataSource {
+class CafeListBridgeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITableViewDataSource {
+    
+    
+    @IBOutlet weak var cafeImageBridge: UIImageView!
+    
+    @IBOutlet weak var arrowLeftBridge: UIButton!
+    
+    @IBOutlet weak var arrowRightBridge: UIButton!
+    
+    @IBOutlet weak var cafeTitleBridge: UILabel!
+    
+    
+    @IBOutlet weak var cafeHourBridge: UILabel!
+    
+    @IBOutlet weak var cafeAddressBridge: UILabel!
+    
+    
 
     
-    @IBOutlet weak var cafeImage: UIImageView!
-    @IBOutlet weak var arrowLeft: UIButton!
-    @IBOutlet weak var arrowRight: UIButton!
-    @IBOutlet weak var cafeTitle: UILabel!
-    @IBOutlet weak var cafeHour: UILabel!
-    @IBOutlet weak var cafeAddress: UILabel!
     
-    
-    //카페 불리안
-    
-    @IBOutlet weak var wifiLabel: UILabel!
-    @IBOutlet weak var toiletLabel: UILabel!
-    @IBOutlet weak var parkingLabel: UILabel!
-    @IBOutlet weak var smokingLabel: UILabel!
+    @IBOutlet weak var wifiLabelBridge: UILabel!
+    @IBOutlet weak var toiletLabelBridge: UILabel!
+    @IBOutlet weak var parkingLabelBridge: UILabel!
+    @IBOutlet weak var smokingLabelBridge: UILabel!
+
     
     
     // 상세 정보
@@ -51,10 +59,10 @@ class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UI
     //이미지 넣기
     func showImage(index: Int) {
         let imageName = itemt!.cafeInfoImage[index]
-        cafeImage.image = UIImage(named: imageName)
+        cafeImageBridge.image = UIImage(named: imageName)
         // 좌/우 이미지 이동이 불가능한 상태면 버튼 상태를 disabled로
-        arrowLeft.isEnabled = index > 0
-        arrowRight.isEnabled = index < images.count - 1
+        arrowLeftBridge.isEnabled = index > 0
+        arrowRightBridge.isEnabled = index < images.count - 1
     }
     
     
@@ -77,7 +85,7 @@ class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         // 초기 이미지는 첫번째 이미지이므로 왼쪽 버튼은 disabled로
-        arrowLeft.isEnabled = false
+        arrowLeftBridge.isEnabled = false
         
         //구분선 그리기 (생략)
         // 사용자 프로필 이미지를 둥글게 (생략)
@@ -86,11 +94,13 @@ class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UI
     
     
     //좋아요 버튼
-    @IBOutlet weak var heartButton: UIButton!
-    @IBAction func heatButtonAction(_ sender: Any) {
-        heartButton.isSelected = !heartButton.isSelected
-    }
     
+    @IBOutlet weak var heartButtonBridge: UIButton!
+    
+    @IBAction func heartButtonBridge(_ sender: Any) {
+        
+         heartButtonBridge.isSelected = !heartButtonBridge.isSelected
+    }
     
     
     
@@ -98,10 +108,10 @@ class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UI
     override func viewWillAppear(_ animated: Bool) {
         
         if let itemq = itemt{
-            cafeTitle.text = itemq.cafeNames
-            cafeHour.text = itemq.cafeHour
-            cafeAddress.text = itemq.cafeAddress
-            cafeImage.image = UIImage(named: itemq.cafeImages)
+            cafeTitleBridge.text = itemq.cafeNames
+            cafeHourBridge.text = itemq.cafeHour
+            cafeAddressBridge.text = itemq.cafeAddress
+            cafeImageBridge.image = UIImage(named: itemq.cafeImages)
             
             
             showImage(index: 0)
@@ -109,27 +119,27 @@ class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UI
         
         //카페 불리안 색깔 설정
         if itemt!.cafeWifi == false {
-            wifiLabel.textColor = UIColor.gray
+            wifiLabelBridge.textColor = UIColor.gray
         } else {
-            wifiLabel.textColor = UIColor.black
+            wifiLabelBridge.textColor = UIColor.black
         }
         
         if itemt!.cafeToilet == false {
-            toiletLabel.textColor = UIColor.gray
+            toiletLabelBridge.textColor = UIColor.gray
         } else {
-            toiletLabel.textColor = UIColor.black
+            toiletLabelBridge.textColor = UIColor.black
         }
         
         if itemt!.cafeSmoking == false {
-            smokingLabel.textColor = UIColor.gray
+            smokingLabelBridge.textColor = UIColor.gray
         } else {
-            smokingLabel.textColor = UIColor.black
+            smokingLabelBridge.textColor = UIColor.black
         }
         
         if itemt!.cafeParking == false {
-            parkingLabel.textColor = UIColor.gray
+            parkingLabelBridge.textColor = UIColor.gray
         } else {
-            parkingLabel.textColor = UIColor.black
+            parkingLabelBridge.textColor = UIColor.black
         }
     }
     
@@ -208,7 +218,7 @@ class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UI
         let size = CGSize(width: width, height: height)
         return size
     }
-
+    
     //셀 개수
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return itemt!.signature.count
@@ -238,3 +248,48 @@ class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UI
     
     
 }
+
+
+////
+////  CafeListBridgeViewController.swift
+////  foodlesummer
+////
+////  Created by 김태현 on 2018. 8. 9..
+////  Copyright © 2018년 김태현. All rights reserved.
+////
+//
+//import UIKit
+//
+//class CafeListBridgeViewController: UIViewController {
+//
+//    var itemtt: Cafe?
+//
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        let detailVC = self.childViewControllers[0] as! CafeDetailViewController
+//        detailVC.itemt = itemtt
+//
+//        // Do any additional setup after loading the view.
+//    }
+//
+////    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+////        if segue.identifier == "detailSegueTwo",
+////            let detailVCTwo = segue.destination as? CafeDetailViewController,
+////            let cell = sender as? UITableViewCell,
+////            let index = CafeListViewController.tableView.indexPath(for: cell)
+////        {
+////            let item = itemtt[index.row]
+////            detailVCTwo.itemt = item
+////        }
+////    }
+//
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//        // Dispose of any resources that can be recreated.
+//    }
+//
+//
+//
+//}

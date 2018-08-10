@@ -18,14 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VzT-7W-13b">
-                                <rect key="frame" x="138" y="507" width="90" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="AlertPractice"/>
-                                <connections>
-                                    <segue destination="n95-B9-ntb" kind="show" id="loM-Cv-hD5"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRf-Op-Zct">
                                 <rect key="frame" x="155" y="127" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -51,14 +43,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35i-WV-3Hd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1710" y="-321"/>
-        </scene>
-        <!--AlertPractice-->
-        <scene sceneID="Spv-eo-Nxe">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="AlertPractice" storyboardName="AlertPractice" id="n95-B9-ntb" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3Bu-a2-NGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1804" y="11"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4Xn-KQ-gdr">

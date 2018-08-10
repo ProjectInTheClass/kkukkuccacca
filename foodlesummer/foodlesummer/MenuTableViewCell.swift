@@ -15,6 +15,9 @@ class MenuTableViewCell: UITableViewCell {
     @IBOutlet weak var hotprice: UILabel!
     
     
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

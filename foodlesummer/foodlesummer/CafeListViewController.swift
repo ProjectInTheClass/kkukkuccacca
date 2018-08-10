@@ -10,6 +10,8 @@ import UIKit
 
 
 class CafeListViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
+    
+    
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -284,6 +286,8 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
         ]
     
     
+    
+    
     //시그니처 메뉴(배열에 메뉴 추가하면 콜렉션 뷰에 추가됨)
     var signatureMenu_1 = [
         Signature(name : "포멜로 주스", picture : UIImage(named:"signature_1")! , price : "5000원"),
@@ -347,7 +351,6 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
 //    func numberOfSections(in tableView: UITableView) -> Int {
 //        return 1
 //    }
-//
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
@@ -359,7 +362,7 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
         
         cell.textLabel?.text = item.cafeNames
         cell.imageView?.image = UIImage(named: item.cafeImages)
-        
+
         
         return cell
     }
@@ -368,18 +371,24 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
 
 
     
+    
+    
     // 상세씬 전환
       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailSegue",
-            let detailVC = segue.destination.childViewControllers[0] as? CafeDetailViewController,
+            let detailVC = segue.destination as? CafeListBridgeViewController,
             let cell = sender as? UITableViewCell,
             let index = self.tableView.indexPath(for: cell)
             {
             let item = items[index.row]
-            detailVC.itemt = item }
+            detailVC.itemt = item
+                
+        }
     }
 
     
+    
+    //카페정보 나타내기
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -411,6 +420,8 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
         tableView.dataSource = self
     }
 
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
