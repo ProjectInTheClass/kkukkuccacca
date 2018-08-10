@@ -19,6 +19,7 @@
 		0E49EF8A2108576F00B90C6F /* foodlesummerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49EF892108576F00B90C6F /* foodlesummerUITests.swift */; };
 		0E4A226C211D527800AD24E6 /* CafeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A226B211D527800AD24E6 /* CafeDetailTableViewController.swift */; };
 		0E4A226E211D610B00AD24E6 /* CafeListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A226D211D610B00AD24E6 /* CafeListCellTableViewCell.swift */; };
+		0E4A2270211D78C200AD24E6 /* Review.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E4A226F211D78C200AD24E6 /* Review.storyboard */; };
 		0E7C2A202111DE6300685E29 /* ExampleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7C2A1F2111DE6300685E29 /* ExampleStoryboard.storyboard */; };
 		0E7C2A9A21130AA300685E29 /* CafeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7C2A9921130AA300685E29 /* CafeDetailViewController.swift */; };
 		0EB7C94D211C3E420070B3D7 /* CafeListBridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C94C211C3E420070B3D7 /* CafeListBridgeViewController.swift */; };
@@ -68,6 +69,7 @@
 		0E49EF8B2108576F00B90C6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E4A226B211D527800AD24E6 /* CafeDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeDetailTableViewController.swift; sourceTree = "<group>"; };
 		0E4A226D211D610B00AD24E6 /* CafeListCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeListCellTableViewCell.swift; sourceTree = "<group>"; };
+		0E4A226F211D78C200AD24E6 /* Review.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Review.storyboard; sourceTree = "<group>"; };
 		0E7C2A1F2111DE6300685E29 /* ExampleStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExampleStoryboard.storyboard; sourceTree = "<group>"; };
 		0E7C2A9921130AA300685E29 /* CafeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeDetailViewController.swift; sourceTree = "<group>"; };
 		0EB7C94C211C3E420070B3D7 /* CafeListBridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeListBridgeViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				C27F1463211838820063B07F /* Star.swift */,
 				0E49EF692108576D00B90C6F /* AppDelegate.swift */,
 				0E49EF6D2108576D00B90C6F /* Main.storyboard */,
+				0E4A226F211D78C200AD24E6 /* Review.storyboard */,
 				0E49EF6B2108576D00B90C6F /* ViewController.swift */,
 				0E7C2A1F2111DE6300685E29 /* ExampleStoryboard.storyboard */,
 				C29DBE2D211AC0D100750351 /* CafeMenu.swift */,
@@ -315,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E4A2270211D78C200AD24E6 /* Review.storyboard in Resources */,
 				0E7C2A202111DE6300685E29 /* ExampleStoryboard.storyboard in Resources */,
 				0E49EF742108576F00B90C6F /* LaunchScreen.storyboard in Resources */,
 				0E12F06321141AD300BDDA62 /* CafeList.storyboard in Resources */,
