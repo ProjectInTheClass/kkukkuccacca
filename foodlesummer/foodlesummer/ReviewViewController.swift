@@ -12,7 +12,7 @@ class ReviewViewController: UIViewController, UITableViewDataSource {
     
     //리뷰 데이터 들어가야 할 부분///
     let reviews : [Review] = [
-        Review(date : "20180101" , review : "맛있어요!", reviewRate : 3.5, nickName : "nickname", userImage : "image" )
+        Review( date : 20180101 , review : "맛있어요!", reviewRate : 3.5, nickName : "nickname", cafenamereview : "스타벅스" )
     ]
     
 //    struct Review{
@@ -33,10 +33,10 @@ class ReviewViewController: UIViewController, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewCell", for: indexPath) as! ReviewTableViewCell
         
         cell.nicknameLabel.text = reviews[indexPath.row].nickName
-        cell.reviewdateLabel.text = String(reviews[indexPath.row].reviewRate)
+        cell.reviewdateLabel.text = String(reviews[indexPath.row].date)
         cell.rateLabel.text = String(reviews[indexPath.row].reviewRate)
         cell.reviewLabel.text = reviews[indexPath.row].review
-        cell.userPicture.image = UIImage(named: reviews[indexPath.row].userImage)
+        cell.cafenameLabel.text = reviews[indexPath.row].cafenamereview
         
         return cell
         

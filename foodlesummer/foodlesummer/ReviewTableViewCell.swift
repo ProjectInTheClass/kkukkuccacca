@@ -13,7 +13,8 @@ class ReviewTableViewCell: UITableViewCell {
     @IBOutlet weak var nicknameLabel: UILabel!
     @IBOutlet weak var reviewdateLabel: UILabel!
     
-    @IBOutlet weak var userPicture: UIImageView!
+    @IBOutlet weak var cafenameLabel: UILabel!
+    
     @IBOutlet weak var rateLabel: UILabel!
     
     @IBOutlet weak var reviewLabel: UILabel!
