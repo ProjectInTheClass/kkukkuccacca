@@ -17,21 +17,11 @@ class CafeListBridgeViewController: UIViewController, UICollectionViewDataSource
     
     
     @IBOutlet weak var cafeImageBridge: UIImageView!
-    
     @IBOutlet weak var arrowLeftBridge: UIButton!
-    
     @IBOutlet weak var arrowRightBridge: UIButton!
-    
     @IBOutlet weak var cafeTitleBridge: UILabel!
-    
-    
     @IBOutlet weak var cafeHourBridge: UILabel!
-    
     @IBOutlet weak var cafeAddressBridge: UILabel!
-    
-    
-
-    
     
     @IBOutlet weak var wifiLabelBridge: UILabel!
     @IBOutlet weak var toiletLabelBridge: UILabel!

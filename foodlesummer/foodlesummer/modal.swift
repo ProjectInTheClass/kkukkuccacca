@@ -44,12 +44,9 @@ struct Signature {
 }
 
 struct Menu {
-
-
     var name : String
     var hotprice : String
     var coolprice : String
-
 }
 
 

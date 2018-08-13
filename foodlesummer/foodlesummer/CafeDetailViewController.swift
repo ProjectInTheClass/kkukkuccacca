@@ -6,6 +6,8 @@
 //  Copyright © 2018년 김태현. All rights reserved.
 //
 
+
+
 import UIKit
 //import XLPagerTabStrip
 //
@@ -13,8 +15,11 @@ import UIKit
 //    
 //}
 
+
+
 class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITableViewDataSource {
 
+    
     
     @IBOutlet weak var cafeImage: UIImageView!
     @IBOutlet weak var arrowLeft: UIButton!
@@ -24,16 +29,20 @@ class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UI
     @IBOutlet weak var cafeAddress: UILabel!
     
     
-    //카페 불리안
     
+    //카페 불리안
     @IBOutlet weak var wifiLabel: UILabel!
     @IBOutlet weak var toiletLabel: UILabel!
     @IBOutlet weak var parkingLabel: UILabel!
     @IBOutlet weak var smokingLabel: UILabel!
     
     
+    
+    
     // 상세 정보
     var itemt: Cafe?
+    
+    
     
     
     //이미지 넣기
@@ -141,6 +150,7 @@ class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UI
     }
     
     
+    
     //섹션마다의 셀 개수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if 0 == section {
@@ -153,6 +163,7 @@ class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UI
     }
     
     
+    
     //섹션마다의 제목 붙여줌
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
@@ -163,6 +174,7 @@ class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UI
             return "Fraqquccino"
         }
     }
+    
     
     
     //셀 정보 입력
@@ -197,11 +209,11 @@ class CafeDetailViewController: UIViewController, UICollectionViewDataSource, UI
     
     
     
-    
     //////////여기서부턴 시그니처 콜렉션 뷰 셀
     
-    //셀 크기 조정하는 부분
     
+    
+    //셀 크기 조정하는 부분
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.size.width / 2 - 2
         let height = width * 1.2

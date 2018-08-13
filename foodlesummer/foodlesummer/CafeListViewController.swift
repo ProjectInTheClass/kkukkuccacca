@@ -22,16 +22,19 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
     
     
     
+    
+    
     //func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     //    let cell = tableView.dequeueReusableCell(withIdentifier: "CafeListCell", for: indexPath) as! CafeListTableViewCell
-        
     //    let item: Cafe = items[indexPath.row]
-        
     //    cell.textLabel?.text = item.cafeNames
     //    cell.imageView?.image = UIImage(named: item.cafeImages)
-        
-        
     //    return cell
+    
+    
+    
+    
+    
     
     //각 항목에 대한 셀 객체 공급
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -48,7 +51,9 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
     
     
     
+    
     @IBOutlet weak var tableView: UITableView!
+    
     
     
     //메뉴 데이터(커피, 차, 프라푸치노)
@@ -383,10 +388,13 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
     
     
     
+    
     //테이블뷰 데이터소스
 //    func numberOfSections(in tableView: UITableView) -> Int {
 //        return 1
 //    }
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
@@ -440,15 +448,15 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
             Cafe (cafeNames: "미엘",cafeImages: "cafe4",
                   cafeHour: "매일 11:00 - 24:00",cafeAddress: "서울 강남구 도산대로67길 13-12", cafeWifi : true, cafeToilet : true, cafeSmoking : false, cafeParking : false, rate : 5.0,menu_coffee : data_coffee_5,menu_tea : data_tea_5 , menu_frappuccino : data_frappuccino_5, signature : signatureMenu_5, cafeInfoImage : ["cafe_info_13","cafe_info_14","cafe_info_15"]),
             Cafe (cafeNames: "cafe_the_healing",cafeImages: "cafe5",
-                  cafeHour: "09:00 ~ 21:00",cafeAddress: "서울 광진구 능동로11길 10", cafeWifi : false, cafeToilet : false, cafeSmoking : true, cafeParking : true, rate : 5.0,menu_coffee : data_coffee_6,menu_tea : data_tea_6 , menu_frappuccino : data_frappuccino_6, signature : signatureMenu_6, cafeInfoImage : ["cafe_info_16","cafe_info_17","cafe_info_18"]),
+                  cafeHour: "매일 09:00 ~ 21:00",cafeAddress: "서울 광진구 능동로11길 10", cafeWifi : false, cafeToilet : false, cafeSmoking : true, cafeParking : true, rate : 5.0,menu_coffee : data_coffee_6,menu_tea : data_tea_6 , menu_frappuccino : data_frappuccino_6, signature : signatureMenu_6, cafeInfoImage : ["cafe_info_16","cafe_info_17","cafe_info_18"]),
             Cafe (cafeNames: "Less is More",cafeImages: "cafe6",
-                  cafeHour: "08:00 ~ 22:00",cafeAddress: "서울 광진구 동일로20길 89", cafeWifi : true, cafeToilet : false, cafeSmoking : false, cafeParking : true, rate : 5.0,menu_coffee : data_coffee_7,menu_tea : data_tea_7 , menu_frappuccino : data_frappuccino_7, signature : signatureMenu_7, cafeInfoImage : ["cafe_info_19","cafe_info_20","cafe_info_21"]),
+                  cafeHour: "매일 08:00 ~ 22:00",cafeAddress: "서울 광진구 동일로20길 89", cafeWifi : true, cafeToilet : false, cafeSmoking : false, cafeParking : true, rate : 5.0,menu_coffee : data_coffee_7,menu_tea : data_tea_7 , menu_frappuccino : data_frappuccino_7, signature : signatureMenu_7, cafeInfoImage : ["cafe_info_19","cafe_info_20","cafe_info_21"]),
             Cafe (cafeNames: "103 express",cafeImages: "cafe7",
-                  cafeHour: "08:00 ~ 18:00",cafeAddress: "서울 광진구 능동로13길 23", cafeWifi : false, cafeToilet : false, cafeSmoking : false, cafeParking : false, rate : 5.0,menu_coffee : data_coffee_8,menu_tea : data_tea_8 , menu_frappuccino : data_frappuccino_8, signature : signatureMenu_8, cafeInfoImage : ["cafe_info_22","cafe_info_23","cafe_info_24"]),
+                  cafeHour: "매일 08:00 ~ 18:00",cafeAddress: "서울 광진구 능동로13길 23", cafeWifi : false, cafeToilet : false, cafeSmoking : false, cafeParking : false, rate : 5.0,menu_coffee : data_coffee_8,menu_tea : data_tea_8 , menu_frappuccino : data_frappuccino_8, signature : signatureMenu_8, cafeInfoImage : ["cafe_info_22","cafe_info_23","cafe_info_24"]),
             Cafe (cafeNames: "Cafe_be_Happy",cafeImages: "cafe8",
-                  cafeHour: "09:00 ~ 23:00",cafeAddress: "서울 광진구 동일로22길", cafeWifi : false, cafeToilet : false, cafeSmoking : true, cafeParking : false, rate : 5.0,menu_coffee : data_coffee_9,menu_tea : data_tea_9 , menu_frappuccino : data_frappuccino_9, signature : signatureMenu_9, cafeInfoImage : ["cafe_info_25","cafe_info_26","cafe_info_27"]),
+                  cafeHour: "매일 09:00 ~ 23:00",cafeAddress: "서울 광진구 동일로22길", cafeWifi : false, cafeToilet : false, cafeSmoking : true, cafeParking : false, rate : 5.0,menu_coffee : data_coffee_9,menu_tea : data_tea_9 , menu_frappuccino : data_frappuccino_9, signature : signatureMenu_9, cafeInfoImage : ["cafe_info_25","cafe_info_26","cafe_info_27"]),
             Cafe (cafeNames: "Silverlick",cafeImages: "cafe9",
-                  cafeHour: "08:00 ~ 24:00",cafeAddress: "서울 광진구 능동로50길 9", cafeWifi : false, cafeToilet : false, cafeSmoking : false, cafeParking : false, rate : 5.0,menu_coffee : data_coffee_10,menu_tea : data_tea_10 , menu_frappuccino : data_frappuccino_10, signature : signatureMenu_10, cafeInfoImage : ["cafe_info_28","cafe_info_29","cafe_info_30"])
+                  cafeHour: "매일 08:00 ~ 24:00",cafeAddress: "서울 광진구 능동로50길 9", cafeWifi : false, cafeToilet : false, cafeSmoking : false, cafeParking : false, rate : 5.0,menu_coffee : data_coffee_10,menu_tea : data_tea_10 , menu_frappuccino : data_frappuccino_10, signature : signatureMenu_10, cafeInfoImage : ["cafe_info_28","cafe_info_29","cafe_info_30"])
             
         ]
 

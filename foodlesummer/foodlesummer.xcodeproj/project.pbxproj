@@ -17,7 +17,6 @@
 		0E49EF742108576F00B90C6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E49EF722108576F00B90C6F /* LaunchScreen.storyboard */; };
 		0E49EF7F2108576F00B90C6F /* foodlesummerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49EF7E2108576F00B90C6F /* foodlesummerTests.swift */; };
 		0E49EF8A2108576F00B90C6F /* foodlesummerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49EF892108576F00B90C6F /* foodlesummerUITests.swift */; };
-		0E4A226C211D527800AD24E6 /* CafeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A226B211D527800AD24E6 /* CafeDetailTableViewController.swift */; };
 		0E4A226E211D610B00AD24E6 /* CafeListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A226D211D610B00AD24E6 /* CafeListCellTableViewCell.swift */; };
 		0E4A2270211D78C200AD24E6 /* Review.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E4A226F211D78C200AD24E6 /* Review.storyboard */; };
 		0E7C2A202111DE6300685E29 /* ExampleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7C2A1F2111DE6300685E29 /* ExampleStoryboard.storyboard */; };
@@ -70,7 +69,6 @@
 		0E49EF852108576F00B90C6F /* foodlesummerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foodlesummerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E49EF892108576F00B90C6F /* foodlesummerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodlesummerUITests.swift; sourceTree = "<group>"; };
 		0E49EF8B2108576F00B90C6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E4A226B211D527800AD24E6 /* CafeDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeDetailTableViewController.swift; sourceTree = "<group>"; };
 		0E4A226D211D610B00AD24E6 /* CafeListCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeListCellTableViewCell.swift; sourceTree = "<group>"; };
 		0E4A226F211D78C200AD24E6 /* Review.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Review.storyboard; sourceTree = "<group>"; };
 		0E7C2A1F2111DE6300685E29 /* ExampleStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExampleStoryboard.storyboard; sourceTree = "<group>"; };
@@ -150,24 +148,23 @@
 			children = (
 				C27F1463211838820063B07F /* Star.swift */,
 				0E49EF692108576D00B90C6F /* AppDelegate.swift */,
+				0E49EF6B2108576D00B90C6F /* ViewController.swift */,
 				0E49EF6D2108576D00B90C6F /* Main.storyboard */,
 				0E4A226F211D78C200AD24E6 /* Review.storyboard */,
 				C2929449211D88C20076A681 /* ReviewTableViewCell.swift */,
 				C2929447211D87970076A681 /* ReviewViewController.swift */,
-				0E49EF6B2108576D00B90C6F /* ViewController.swift */,
 				0E7C2A1F2111DE6300685E29 /* ExampleStoryboard.storyboard */,
 				C29DBE2D211AC0D100750351 /* CafeMenu.swift */,
 				C24F93402112E6E200A89826 /* SignatureMenuCollectionViewCell.swift */,
 				0E12F06C2114453D00BDDA62 /* CafeListTableViewCell.swift */,
 				C27CE43A2112F45F0004C4D0 /* MenuTableViewCell.swift */,
+				0EFADCB1211582EE00216709 /* modal.swift */,
 				0E12F06221141AD300BDDA62 /* CafeList.storyboard */,
 				C2929445211D7E870076A681 /* CafeListCollectionViewCell.swift */,
-				0EFADCB1211582EE00216709 /* modal.swift */,
-				0E4A226D211D610B00AD24E6 /* CafeListCellTableViewCell.swift */,
 				0E12F06421141AF100BDDA62 /* CafeListViewController.swift */,
 				0EB7C94C211C3E420070B3D7 /* CafeListBridgeViewController.swift */,
+				0E4A226D211D610B00AD24E6 /* CafeListCellTableViewCell.swift */,
 				0E7C2A9921130AA300685E29 /* CafeDetailViewController.swift */,
-				0E4A226B211D527800AD24E6 /* CafeDetailTableViewController.swift */,
 				0E49EF702108576F00B90C6F /* Assets.xcassets */,
 				0E49EF722108576F00B90C6F /* LaunchScreen.storyboard */,
 				0E49EF752108576F00B90C6F /* Info.plist */,
@@ -438,7 +435,6 @@
 				C2929446211D7E870076A681 /* CafeListCollectionViewCell.swift in Sources */,
 				C29DBE2E211AC0D100750351 /* CafeMenu.swift in Sources */,
 				0E4A226E211D610B00AD24E6 /* CafeListCellTableViewCell.swift in Sources */,
-				0E4A226C211D527800AD24E6 /* CafeDetailTableViewController.swift in Sources */,
 				0E12F06521141AF100BDDA62 /* CafeListViewController.swift in Sources */,
 				C27F1464211838820063B07F /* Star.swift in Sources */,
 				C292944A211D88C20076A681 /* ReviewTableViewCell.swift in Sources */,
