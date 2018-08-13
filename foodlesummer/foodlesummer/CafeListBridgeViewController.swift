@@ -141,7 +141,7 @@ class CafeListBridgeViewController: UIViewController, UICollectionViewDataSource
     }
     
     
-    //섹션마다의 셀 개수
+    //섹션마다의 셀 개수 (커피 티 프라푸치노)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if 0 == section {
             return itemt!.menu_coffee.count
@@ -153,7 +153,7 @@ class CafeListBridgeViewController: UIViewController, UICollectionViewDataSource
     }
     
     
-    //섹션마다의 제목 붙여줌
+    //섹션마다의 제목 붙여줌 (커피 티 프라푸치노)
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
             return "coffee"

@@ -34,9 +34,30 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
     
     
     
+    //테이블뷰 데이터소스
+    //    func numberOfSections(in tableView: UITableView) -> Int {
+    //        return 1
+    //    }
     
     
-    //각 항목에 대한 셀 객체 공급
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CafeListCell", for: indexPath) as! CafeListTableViewCell
+        
+        let item: Cafe = items[indexPath.row]
+        
+        cell.textLabel?.text = item.cafeNames
+        cell.imageView?.image = UIImage(named: item.cafeImages)
+        
+        
+        return cell
+    }
+
+    
+    //콜렉션 뷰 _ 각 항목에 대한 셀 객체 공급
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CafeList", for: indexPath) as! CafeListCollectionViewCell
@@ -51,7 +72,7 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
     
     
     
-    
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -389,28 +410,7 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
     
     
     
-    //테이블뷰 데이터소스
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//        return 1
-//    }
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CafeListCell", for: indexPath) as! CafeListTableViewCell
-        
-        let item: Cafe = items[indexPath.row]
-        
-        cell.textLabel?.text = item.cafeNames
-        cell.imageView?.image = UIImage(named: item.cafeImages)
-
-        
-        return cell
-    }
-
+  
 
 
 
@@ -421,12 +421,11 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailSegue",
             let detailVC = segue.destination as? CafeListBridgeViewController,
-            let cell = sender as? UITableViewCell,
-            let index = self.tableView.indexPath(for: cell)
+            let cell = sender as? UICollectionViewCell,
+            let index = self.collectionView.indexPath(for: cell)
         {
             let item = items[index.row]
             detailVC.itemt = item
-            
         }
     }
 
@@ -460,8 +459,8 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
             
         ]
 
-        tableView.delegate = self
-        tableView.dataSource = self
+//        tableView.delegate = self
+//        tableView.dataSource = self
     }
 
     

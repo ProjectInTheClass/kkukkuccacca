@@ -10,17 +10,8 @@ import UIKit
 
 class CafeListCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var picture: UIImageView!
-    @IBOutlet weak var label: UILabel!
-    
-    
-    
-    
-    /////
+
     @IBOutlet weak var cafePicture: UIImageView!
-    
-    
     @IBOutlet weak var cafeLabel: UILabel!
-    
     
 }

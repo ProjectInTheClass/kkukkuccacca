@@ -11,9 +11,17 @@ import UIKit
 class ReviewViewController: UIViewController, UITableViewDataSource {
     
     //리뷰 데이터 들어가야 할 부분///
-    let reviews : [Review] = []
+    let reviews : [Review] = [
+        Review(date : "20180101" , review : "맛있어요!", reviewRate : 3.5, nickName : "nickname", userImage : "image" )
+    ]
     
-    
+//    struct Review{
+//        var date: String
+//        var review: String
+//        var reviewRate: Double
+//        var nickName: String
+//        var userImage: String
+//    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
