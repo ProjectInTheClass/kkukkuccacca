@@ -52,11 +52,11 @@ struct Menu {
 
 
 struct Review{
-    var date: String
+    var date: Int
     var review: String
     var reviewRate: Double
     var nickName: String
-    var userImage: String
+    var cafenamereview: String
 }
 
 
