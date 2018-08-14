@@ -32,7 +32,6 @@ class ReviewViewController: UIViewController, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewCell", for: indexPath) as! ReviewTableViewCell
         
-        cell.nicknameLabel.text = reviews[indexPath.row].nickName
         cell.reviewdateLabel.text = String(reviews[indexPath.row].date)
         cell.rateLabel.text = String(reviews[indexPath.row].reviewRate)
         cell.reviewLabel.text = reviews[indexPath.row].review
