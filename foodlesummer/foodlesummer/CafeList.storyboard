@@ -84,7 +84,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zUA-7u-tud"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="카페" id="NIG-2h-Lsk">
+                    <tabBarItem key="tabBarItem" title="카페" selectedImage="cafeicon" id="NIG-2h-Lsk">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="VkQ-3o-1hq"/>
@@ -618,11 +618,11 @@
             </objects>
             <point key="canvasLocation" x="-159" y="-1277"/>
         </scene>
-        <!--Item-->
+        <!--카페-->
         <scene sceneID="Sge-3w-M9n">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QgX-St-d0x" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="FXz-5o-fNr"/>
+                    <tabBarItem key="tabBarItem" title="카페" image="cafeicon" selectedImage="cafeicon" id="FXz-5o-fNr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AJb-d5-rlu">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -659,6 +659,7 @@
     <resources>
         <image name="arrow_left" width="18" height="30"/>
         <image name="arrow_right" width="18" height="30"/>
+        <image name="cafeicon" width="24" height="24"/>
         <image name="heart_filled" width="44" height="44"/>
         <image name="heart_nofilled" width="44" height="44"/>
     </resources>
