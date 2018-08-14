@@ -49,7 +49,7 @@ class CafeListViewController: UIViewController,UITableViewDataSource, UITableVie
         
         let item: Cafe = items[indexPath.row]
         
-        cell.textLabel?.text = item.cafeNames
+        cell.textLabel?.text = item.cafeNames 
         cell.imageView?.image = UIImage(named: item.cafeImages)
         
         

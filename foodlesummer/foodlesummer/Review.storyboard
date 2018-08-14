@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Review View Controller-->
+        <!--리뷰-->
         <scene sceneID="d1m-IK-tEi">
             <objects>
-                <viewController storyboardIdentifier="Review" id="RSL-rY-5sd" customClass="ReviewViewController" customModule="foodlesummer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Review" title="리뷰" id="RSL-rY-5sd" customClass="ReviewViewController" customModule="foodlesummer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="foZ-t3-nz6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

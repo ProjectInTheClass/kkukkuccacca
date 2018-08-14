@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Cafe List View Controller-->
+        <!--카페-->
         <scene sceneID="Aba-vH-Yno">
             <objects>
-                <viewController storyboardIdentifier="CafeLists" id="wFR-gL-y4u" customClass="CafeListViewController" customModule="foodlesummer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CafeLists" title="카페" id="wFR-gL-y4u" customClass="CafeListViewController" customModule="foodlesummer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O7e-fy-K4P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="R7F-RR-Pyn">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="0.43662528757668712" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Xjf-fh-2jf">
                                     <size key="itemSize" width="375" height="212"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -44,20 +44,27 @@
                                                     <rect key="frame" x="67" y="42" width="240" height="128"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52N-hS-nCT">
-                                                            <rect key="frame" x="8" y="54" width="224" height="21"/>
+                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a9v-Kb-GmW">
+                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <attributedString key="attributedText">
-                                                                <fragment content="Label">
-                                                                    <attributes>
-                                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <font key="NSFont" size="30" name="NanumMyeongjoBold"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52N-hS-nCT">
+                                                                    <rect key="frame" x="-24" y="47" width="288" height="35"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <attributedString key="attributedText">
+                                                                        <fragment content="라벨">
+                                                                            <attributes>
+                                                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                <font key="NSFont" size="30" name="NanumGothic"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="0.70689944401840488" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </view>
                                                     </subviews>
                                                 </view>
                                             </subviews>
@@ -77,6 +84,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zUA-7u-tud"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="카페" id="NIG-2h-Lsk">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="VkQ-3o-1hq"/>
                     <connections>
                         <outlet property="collectionView" destination="R7F-RR-Pyn" id="vHw-Gb-CdN"/>
@@ -90,7 +100,7 @@
         <scene sceneID="srU-Qc-6eP">
             <objects>
                 <viewControllerPlaceholder storyboardName="Review" referencedIdentifier="Review" id="nvq-md-gIp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="KiE-yB-TL3"/>
+                    <tabBarItem key="tabBarItem" title="" id="KiE-yB-TL3"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mhl-3T-ufN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -154,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="-996" y="-1277"/>
         </scene>
-        <!--Cafe List Bridge View Controller-->
+        <!--카페-->
         <scene sceneID="lXz-Kz-Lo3">
             <objects>
-                <viewController id="nuL-rI-3me" customClass="CafeListBridgeViewController" customModule="foodlesummer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="카페" id="nuL-rI-3me" customClass="CafeListBridgeViewController" customModule="foodlesummer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EgB-Uj-BwU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -612,8 +622,7 @@
         <scene sceneID="Sge-3w-M9n">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QgX-St-d0x" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="NIG-2h-Lsk"/>
-                    <toolbarItems/>
+                    <tabBarItem key="tabBarItem" title="Item" id="FXz-5o-fNr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AJb-d5-rlu">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -632,13 +641,14 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jur-dB-ugz" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rbh-YV-brR">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <navigationItem key="navigationItem" id="7Lj-zB-wOU"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="cFS-ZF-d6H">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </tabBar>
                     <connections>
-                        <segue destination="QgX-St-d0x" kind="relationship" relationship="viewControllers" id="3h6-19-Fxb"/>
-                        <segue destination="nvq-md-gIp" kind="relationship" relationship="viewControllers" id="KNt-Ga-yDY"/>
+                        <segue destination="QgX-St-d0x" kind="relationship" relationship="viewControllers" id="p6T-wS-KXh"/>
+                        <segue destination="nvq-md-gIp" kind="relationship" relationship="viewControllers" id="Ldb-kK-Qx0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqM-mL-zsp" userLabel="First Responder" sceneMemberID="firstResponder"/>
